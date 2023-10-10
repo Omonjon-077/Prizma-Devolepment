@@ -82,10 +82,11 @@ button[aria-expanded^="true"] i {
 }
 
 .btn-primary {
-    color: var(--bs-secondary);
-    background: var(--bs-primary);
+    color: var(--bs-primary);
+    background: var(--bs-secondary);
     font-size: 14px;
-    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .self-height-lg-siwper {
@@ -96,8 +97,8 @@ button[aria-expanded^="true"] i {
     box-shadow: none !important;
 }
 
-.text-tg {
-    color: #4C82F7 !important;
+.text-gray {
+    color: var(--bs-gray) !important;
 }
 
 .bg-gray {
@@ -220,7 +221,7 @@ button {
 }
 
 .primary-hover:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-secondary) !important;
 }
 
 li,
@@ -271,9 +272,9 @@ a {
 }
 
 /*=============== INTRO SECTION | Omonjon ===============*/
-.intro-section {
-    background-image: url("../images/intro-bg.jpg") !important;
-    /* min-height: 70vh; */
+.intro-section .container {
+    background-image: url("../images/bg-banner.jpg") !important;
+    height: 593px;
 }
 
 .scroll-behavior {
@@ -326,16 +327,16 @@ a {
 ::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
-    background-color: hsla(93, 36%, 26%, 0.71)
+    background-color: var(--bs-primary);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: hsla(92, 100%, 48%, 0.743);
+    background-color: var(--bs-secondary);
     border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--bs-primary);
+    background-color: yellow;
 }
 
 /*=============== SCROLL UP | Omonjon ===============*/

@@ -1,11 +1,11 @@
 /*=============== LOADER ===============*/
-document.addEventListener('DOMContentLoaded', function (eventObject) {
-    $('.load').fadeIn();
-})
-window.addEventListener("load", function (eventObject) {
-    $('.load').fadeOut("slow");
-
-});
+// document.addEventListener('DOMContentLoaded', function (eventObject) {
+//     $('.load').fadeIn();
+// })
+// window.addEventListener("load", function (eventObject) {
+//     $('.load').fadeOut("slow");
+//
+// });
 
 /*=============== Header Fixed ===============*/
 if ($("#myHeader").length) {

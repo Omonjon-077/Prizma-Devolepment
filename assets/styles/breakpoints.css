@@ -1,3 +1,9 @@
+@media (min-width: 778px) {
+    .border-lg-end{
+        border-right: 1px solid var(--bs-gray);
+    }
+}
+
 @media (max-width: 767px) {
     .scroll_up {
         right: 1rem;
@@ -7,5 +13,9 @@
 @media (max-width: 575px) {
     .scrollup {
         right: 1rem;
+    }
+
+    .site-logo{
+        width: 150px;
     }
 }
