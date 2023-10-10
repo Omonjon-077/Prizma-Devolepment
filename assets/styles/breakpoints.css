@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+    .scroll_up {
+        right: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .scrollup {
+        right: 1rem;
+    }
+}
