@@ -21,17 +21,17 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
     <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.1">
-    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.1">
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.2">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.2">
 
     <title>Prizma Devolepment</title>
 </head>
 <body>
 <!--================ LOADER | Omonjon ================-->
-<!--<div class="load" id="load">-->
-<!--    <lottie-player autoplay loop mode="normal" src="..." class="load-gif">-->
-<!--    </lottie-player>-->
-<!--</div>-->
+<div class="load" id="load">
+    <lottie-player autoplay loop mode="normal" src="jsons/loader.json" class="load-gif">
+    </lottie-player>
+</div>
 
 <!--================ MENUS MODAL | Omonjon ================-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -48,7 +48,7 @@
                     <div class="row row-gap-3">
                         <div class="col-12">
                             <div class="d-flex flex-column align-items-center row-gap-2">
-                                <h3 class="fs-5 text-white">Prizma </h3>
+                                <h3 class="fs-5 text-white">Prizma Devolepment</h3>
                                 <ul class="d-flex flex-column align-items-center row-gap-2">
                                     <li><a class="text-white-50" href="#">Loyiha haqida</a></li>
                                     <li><a class="text-white-50" href="#">Xususiyatlari</a></li>
@@ -74,17 +74,20 @@
                                                                              src="assets/images/site-logo.png"></a>
                 <ul class="d-lg-flex d-none align-items-center column-gap-4">
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#">Loyiha
+                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page"
+                           href="#about-project">Loyiha
                             haqida</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#">Xususiyatlari</a>
+                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page"
+                           href="#building-section">Xususiyatlari</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#">Fotosuratlar</a>
+                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page"
+                           href="#photos-section">Fotosuratlar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#">Joylashuvi</a>
+                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#location-section">Joylashuvi</a>
                     </li>
                     <li class="nav-item">
                         <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#">Biz
@@ -125,35 +128,282 @@
     </section>
 
     <!--==================== NUMBERS | Omonjon ====================-->
-    <section class="numbers py-5">
+    <section class="numbers-section py-5 py-lg-4">
         <div class="container">
             <div class="px-xl-5">
-                <div class="row row-gap-3">
-                    <div class="col-6 col-md-3">
+                <div class="row row-gap-3 justify-content-center">
+                    <div class="col-6 col-sm-4">
                         <div class="d-flex flex-column align-items-center border-lg-end">
-                            <h4 class="fs-1 text-primary fw-bold">4+</h4>
+                            <h4 class="fs-1 text-primary fw-bold">8 ta</h4>
                             <p class="fs-7 text-gray">Blok</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-6 col-sm-4">
                         <div class="d-flex flex-column align-items-center border-lg-end">
-                            <h4 class="fs-1 text-primary fw-bold">100+</h4>
+                            <h4 class="fs-1 text-primary fw-bold">600+</h4>
                             <p class="fs-7 text-gray">xonadonlar</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <div class="d-flex flex-column align-items-center border-lg-end">
-                            <h4 class="fs-1 text-primary fw-bold">26+</h4>
-                            <p class="fs-7 text-gray">Xil Korinish</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-6 col-sm-4">
                         <div class="d-flex flex-column align-items-center">
-                            <h4 class="fs-1 text-primary fw-bold">1000+</h4>
-                            <p class="fs-7 text-gray">Xursand oilalar</p>
+                            <h4 class="fs-1 text-primary fw-bold">26+</h4>
+                            <p class="fs-7 text-gray">Uy rejalari</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ABOUT PROJECT | Omonjon ====================-->
+    <section class="about-project py-5" id="about-project">
+        <div class="container">
+            <h4 class="section-title d-none d-xl-block no-select">Loyiha haqida</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary">Loyiha haqida</h4>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container pt-5">
+            <div class="row row-gap-4">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-column">
+                        <p class="fs-7 text-gray fw-normal text-center text-lg-start">Lorem ipsum dolor sit amet
+                            consectetur. Eget ac tincidunt id posuere risus. Nullam faucibus
+                            sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet ipsum pretium sit.
+                            Sed molestie condimentum ultrices purus diam amet. Aenean morbi faucibus nisl ac sodales
+                            nibh dignissim maecenas nunc. </p>
+                        <p class="fs-7 text-gray fw-normal text-center text-lg-start my-4">Vitae quam id massa risus
+                            nulla purus dapibus lectus. Volutpat sollicitudin urna nulla arcu
+                            eu in ipsum dui condimentum. Ullamcorper pellentesque sed scelerisque leo adipiscing
+                            facilisi. Quam pretium tellus id semper vel enim scelerisque. In sed tempor cursus eu orci
+                            vel.</p>
+                        <p class="fs-7 text-gray fw-normal text-center text-lg-start">onec proin feugiat feugiat sit
+                            cras eu dapibus. Tellus auctor rhoncus donec ut id enim eget
+                            volutpat. Condimentum donec a suscipit.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex">
+                        <img src="./assets/images/project-1.jpg" alt="Project" class="w-100">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex">
+                        <img src="./assets/images/project-3.jpg" alt="Project" class="w-100">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex">
+                        <img src="./assets/images/project-2.jpg" alt="Project" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== BUILDING | Omonjon ====================-->
+    <section id="building-section" class="building-section py-5">
+        <div class="container">
+            <h4 class="section-title d-none d-xl-block no-select">Afzalliklarimiz</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary">Turar joy majmuasining
+                qulayliklari</h4>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-xl-2 d-none d-xl-block">
+                    <div class="d-flex">
+                        <img class="" alt="" src="assets/images/comforts-1.jpg">
+                    </div>
+                </div>
+                <div class="col-12 col-xl-10">
+                    <div class="row row-gap-4">
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                                <div class="">
+                                    <img class="" alt="Logo" src="./assets/images/svg/building-1.svg">
+                                </div>
+                                <h4 class="text-primary fs-5 fw-normal">Har tomonlama zamonaviy</h4>
+                                <p class="fs-7 text-gray fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
+                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
+                                    ipsum pretium sit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                                <div class="">
+                                    <img class="" alt="Logo" src="./assets/images/svg/building-2.svg">
+                                </div>
+                                <h4 class="text-primary fs-5 fw-normal">Avtoturargoh</h4>
+                                <p class="fs-7 text-gray fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
+                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
+                                    ipsum pretium sit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                                <div class="">
+                                    <img class="" alt="Logo" src="./assets/images/svg/building-3.svg">
+                                </div>
+                                <h4 class="text-primary fs-5 fw-normal">Tozalik va havfsizlik</h4>
+                                <p class="fs-7 text-gray fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
+                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
+                                    ipsum pretium sit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                                <div class="">
+                                    <img class="" alt="Logo" src="./assets/images/svg/building-4.svg">
+                                </div>
+                                <h4 class="text-primary fs-5 fw-normal">Uzlukliz issiqlik ta'minoti</h4>
+                                <p class="fs-7 text-gray fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
+                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
+                                    ipsum pretium sit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                                <div class="">
+                                    <img class="" alt="Logo" src="./assets/images/svg/building-5.svg">
+                                </div>
+                                <h4 class="text-primary fs-5 fw-normal">Elektr energiyasi ta'minoti</h4>
+                                <p class="fs-7 text-gray fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
+                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
+                                    ipsum pretium sit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                                <div class="">
+                                    <img class="" alt="Logo" src="./assets/images/svg/building-6.svg">
+                                </div>
+                                <h4 class="text-primary fs-5 fw-normal">Qo'riqlanuvchi hudud</h4>
+                                <p class="fs-7 text-gray fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
+                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
+                                    ipsum pretium sit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                                <div class="">
+                                    <img class="" alt="Logo" src="./assets/images/svg/building-7.svg">
+                                </div>
+                                <h4 class="text-primary fs-5 fw-normal">Bolalar bog'chasi</h4>
+                                <p class="fs-7 text-gray fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
+                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
+                                    ipsum pretium sit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                                <div class="">
+                                    <img class="" alt="Logo" src="./assets/images/svg/building-8.svg">
+                                </div>
+                                <h4 class="text-primary fs-5 fw-normal">Uyingiz yaqinidagi bog'cha</h4>
+                                <p class="fs-7 text-gray fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
+                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
+                                    ipsum pretium sit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== PHOTOS | Omonjon ====================-->
+    <section id="photos-section" class="photos-section py-5 bg-primary">
+        <div class="container">
+            <h4 class="section-title text-white d-none d-xl-block no-select">Fotosuratlar</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-white">Sizning kelajakdagi uyingiz
+                suratlarda</h4>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="pt-5">
+            <div class="swiper photoSwiper mb-5">
+                <div class="swiper-wrapper position-relative">
+                    <div class="swiper-slide">
+                        <div class="d-flex">
+                            <img src="./assets/images/slide-home.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex">
+                            <img src="./assets/images/slide-home.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex">
+                            <img src="./assets/images/slide-home.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next pe-2 pe-lg-5 pe-md-4">
+                    <img class="d-none d-lg-flex" src="assets/images/svg/right-arrow.svg" alt="">
+                    <i class='bx bx-right-arrow-alt bx-md text-white d-flex d-lg-none'></i>
+                </div>
+                <div class="swiper-button-prev ps-2 ps-lg-5 ps-md-4">
+                    <img class="transform-180-deg d-none d-lg-flex" src="assets/images/svg/right-arrow.svg" alt="">
+                    <i class='bx bx-left-arrow-alt bx-md text-white d-flex d-lg-none'></i>
+                </div>
+                <div class="container-70 px-0">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <a href="#" class="btn-secondary rounded-0 py-2 px-3">Hammasini ko’rish</a>
+                        </div>
+                        <div class="col-auto">
+                            <div class="swiper-pagination text-white fs-2 d-flex align-items-end justify-content-end mt-4 position-relative">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== LOCATION | Omonjon ====================-->
+    <section id="location-section" class="location-section py-5">
+        <div class="container">
+            <h4 class="section-title text-primary d-none d-xl-block no-select">Joylashuvimiz</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary">Loyiha manzili</h4>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container pt-5">
+            <div class="d-flex">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23972.07061162338!2d69.25769359431338!3d41.319547687002526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1697280226385!5m2!1sru!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -185,6 +435,6 @@
 </script>
 
 <!--================ MAIN JS | Omonjon ================-->
-<script src="assets/script/main.js?v=0.0.1"></script>
+<script src="assets/script/main.js?v=0.0.2"></script>
 </body>
 </html>

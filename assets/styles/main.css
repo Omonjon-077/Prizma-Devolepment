@@ -135,6 +135,14 @@ button[aria-expanded^="true"] i {
     z-index: 1;
 }
 
+.transform-180-deg{
+    -webkit-transform: rotate(180deg); /* apparently that Z stuff is needed for webkit browsers like chrome */
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .z-index-2 {
     z-index: 2;
 }
@@ -224,6 +232,10 @@ button {
     color: var(--bs-secondary) !important;
 }
 
+.scroll-behavior {
+    scroll-behavior: smooth !important;
+}
+
 li,
 ul,
 ol {
@@ -277,52 +289,49 @@ a {
     height: 593px;
 }
 
-.scroll-behavior {
-    scroll-behavior: smooth !important;
-}
-
-/*=============== NEWS SWIPER | Omonjon ===============*/
-.partner-wh {
-    width: 140px !important;
-    height: 30px;
-}
-
-/*=============== NEWS SWIPER | Omonjon ===============*/
+/*=============== PHOTOS SWIPER | Omonjon ===============*/
 .news-section {
     padding: 0 10px !important;
 }
 
-.news-section .swiper-button-prev::after,
-.news-section .swiper-button-next::after {
+.swiper-pagination-current{
+    color: var(--bs-secondary);
+}
+
+.photoSwiper .swiper-button-prev::after,
+.photoSwiper .swiper-button-next::after {
     content: '';
 }
 
-.news-section .swiper-slide {
-    margin-bottom: 4.5rem;
+.photoSwiper .swiper-button-disabled{
+    visibility: hidden;
 }
 
-.news-section .swiper-pagination-bullets {
-    bottom: 0;
+.photoSwiper .swiper-slide {
+    width: 70%;
+    opacity: 0.3;
+}
+.photoSwiper .swiper-slide.swiper-slide-active {
+    opacity: 1 !important;
+}
+.photoSwiper .swiper-slide:nth-child(2n) {
+    width: 70%;
+
 }
 
-.news-section .swiper-pagination-bullet {
-    width: 7px;
-    height: 7px;
-    background-color: #FFFFFF;
-    opacity: .7;
+.photoSwiper .swiper-slide:nth-child(3n) {
+    width: 70%;
 }
 
-.news-section .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 .5rem;
+.container-70 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 70%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
 }
-
-.news-section .swiper-pagination-bullet-active {
-    background-color: var(--bs-white);
-    width: 1.5rem;
-    height: 7px;
-    border-radius: .5rem;
-}
-
 /*=============== SCROLL BAR | Omonjon ===============*/
 ::-webkit-scrollbar {
     width: .6rem;
@@ -345,7 +354,6 @@ a {
     right: 3.5rem;
     bottom: -100%;
     background-color: var(--bs-primary);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: inline-flex;
     padding: .35rem;
     border-radius: .25rem;

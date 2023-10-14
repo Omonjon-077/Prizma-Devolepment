@@ -1,11 +1,10 @@
 /*=============== LOADER ===============*/
-// document.addEventListener('DOMContentLoaded', function (eventObject) {
-//     $('.load').fadeIn();
-// })
-// window.addEventListener("load", function (eventObject) {
-//     $('.load').fadeOut("slow");
-//
-// });
+document.addEventListener('DOMContentLoaded', function (eventObject) {
+    $('.load').fadeIn();
+})
+window.addEventListener("load", function (eventObject) {
+    $('.load').fadeOut("slow");
+});
 
 /*=============== Header Fixed ===============*/
 if ($("#myHeader").length) {
@@ -26,155 +25,28 @@ if ($("#myHeader").length) {
 }
 
 /*=============== PARTNERS | SWIPER ===============*/
-if ($(".partnerSwiper").length) {
-    let swiper = new Swiper(".partnerSwiper", {
-        slidesPerView: 6,
+if ($(".photoSwiper").length) {
+    let swiper = new Swiper(".photoSwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
         spaceBetween: 30,
-        loop: true,
+        loop: false,
         grabCursor: true,
-        autoplay: true,
-        breakpoints: {
-            // when window width is >= 280px
-            280: {
-                slidesPerView: 1,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 575px
-            575: {
-                slidesPerView: 2,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 768px
-            768: {
-                slidesPerView: 3,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 992px
-            992: {
-                slidesPerView: 4,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 1200px
-            1200: {
-                slidesPerView: 5,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 1440px
-            1440: {
-                slidesPerView: 6,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-        }
-    });
-}
-
-
-/*=============== TESTIMONIAL | SWIPER ===============*/
-if ($(".testimonial").length) {
-    let swiper = new Swiper(".testimonial", {
-        slidesPerView: 6,
-        spaceBetween: 30,
-        loop: true,
-        grabCursor: true,
-        autoplay: true,
-        breakpoints: {
-            // when window width is >= 280px
-            280: {
-                slidesPerView: 1,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 575px
-            575: {
-                slidesPerView: 2,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 768px
-            768: {
-                slidesPerView: 3,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 992px
-            992: {
-                slidesPerView: 4,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 1200px
-            1200: {
-                slidesPerView: 5,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 1440px
-            1440: {
-                slidesPerView: 6,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-        }
-    });
-}
-
-/*=============== NEWS | SWIPER ===============*/
-if ($(".news-section").length) {
-    let swiper = new Swiper(".news-section", {
-        grabCursor: true,
-        slidesPerView: 3,
-        // spaceBetween: 10,
-        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-        },
-        breakpoints: {
-            // when window width is >= 280px
-            280: {
-                slidesPerView: 1,
-                spaceBetween: 15,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 575px
-            575: {
-                slidesPerView: 1,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 768px
-            768: {
-                slidesPerView: 2,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 992px
-            992: {
-                slidesPerView: 2,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-            // when window width is >= 1200px
-            1200: {
-                slidesPerView: 3,
-                // spaceBetween: 0,
-                // slideToClickedSlide: true,
-            },
-        },
-        keyboard: true,
     });
 }
+
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up')
