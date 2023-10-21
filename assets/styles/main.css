@@ -283,6 +283,17 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+/* ==================== ABOUT PROJECT | Omonjon ==================== */
+.position-left{
+    bottom: -85px;
+    left: -60px;
+}
+
+.position-right{
+    top: -45px;
+    right: -45px;
+}
+
 /*=============== INTRO SECTION | Omonjon ===============*/
 .intro-section .container {
     background-image: url("../images/bg-banner.jpg") !important;

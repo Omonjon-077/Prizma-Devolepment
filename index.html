@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dataFont">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -17,11 +17,14 @@
     <!--================ SWIPER CSS 8.1.1v | Omonjon ================-->
     <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
 
+    <!--================ BOXED-CHECK CSS 1.0.7v | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/boxed-check.css">
+
     <!--================ BOOTSTRAP CSS 5.3v | Omonjon ===============-->
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
     <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.2">
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.3">
     <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.2">
 
     <title>Prizma Devolepment</title>
@@ -87,7 +90,8 @@
                            href="#photos-section">Fotosuratlar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#location-section">Joylashuvi</a>
+                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page"
+                           href="#location-section">Joylashuvi</a>
                     </li>
                     <li class="nav-item">
                         <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#">Biz
@@ -167,7 +171,7 @@
         <div class="container pt-5">
             <div class="row row-gap-4">
                 <div class="col-12 col-lg-6">
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column position-relative">
                         <p class="fs-7 text-gray fw-normal text-center text-lg-start">Lorem ipsum dolor sit amet
                             consectetur. Eget ac tincidunt id posuere risus. Nullam faucibus
                             sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet ipsum pretium sit.
@@ -181,11 +185,17 @@
                         <p class="fs-7 text-gray fw-normal text-center text-lg-start">onec proin feugiat feugiat sit
                             cras eu dapibus. Tellus auctor rhoncus donec ut id enim eget
                             volutpat. Condimentum donec a suscipit.</p>
+                        <div class="position-absolute position-left d-none d-lg-block">
+                            <img src="./assets/images/vector-logo.png" alt="Site logo" class="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="d-flex">
+                    <div class="d-flex position-relative">
                         <img src="./assets/images/project-1.jpg" alt="Project" class="w-100">
+                        <div class="d-none d-lg-block position-absolute position-right">
+                            <img src="./assets/images/vector-logo.png" alt="Site logo" class="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -399,7 +409,7 @@
         <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
             <img class="" alt="" src="assets/images/yellow-line.jpg">
         </div>
-        <div class="container pt-5">
+        <div class="container px-2 px-sm-0 pt-5">
             <div class="d-flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23972.07061162338!2d69.25769359431338!3d41.319547687002526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1697280226385!5m2!1sru!2s"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -407,9 +417,154 @@
             </div>
         </div>
     </section>
+
+    <!--==================== PRICES | Omonjon ====================-->
+    <section class="prices-section py-5 bg-primary">
+        <h4 class="section-title text-center text-uppercase text-white d-none d-xl-block no-select">uy rejalari va
+            narxlari</h4>
+        <div class="container">
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-white">uy rejalari va narxlari</h4>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container pt-5 pb-lg-5 mt-lg-4 px-2 px-sm-0">
+            <div class="row row-gap-3">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+                        <img src="./assets/images/home-price.png" alt="Img" class="w-100">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-column align-items-start border border-1 border-white rounded-3 p-md-5 p-3">
+                        <h4 class="fs-2 mb-4 text-white fw-bold">Xonadon turini tanlang</h4>
+
+                        <h6 class="text-white fw-normal mb-2 fs-6">Xonalar</h6>
+                        <form action="" class="mb-4" method="">
+                            <div class="overview-radio">
+                                <div class="row boxed-check-group boxed-check-success">
+                                    <div class="col-3">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview" checked>
+                                            <div class="boxed-check-label">1</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">2</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">3</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">4</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <h6 class="text-white fw-normal mb-2 fs-6">Qavat</h6>
+                        <form action="" class="mb-4" method="">
+                            <div class="overview-radio">
+                                <div class="row boxed-check-group boxed-check-success row-gap-3">
+                                    <div class="col-3 col-sm-2">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview" checked>
+                                            <div class="boxed-check-label">1</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-3 col-sm-2">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">2</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-3 col-sm-2">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">3</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-3 col-sm-2">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">4</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-3 col-sm-2">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">5</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-3 col-sm-2">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">6</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <h6 class="text-white fw-normal mb-2 fs-6">Kvadraturasi</h6>
+                        <form action="" class="mb-5" method="">
+                            <div class="overview-radio">
+                                <div class="row boxed-check-group boxed-check-success row-gap-3">
+                                    <div class="col-4 col-sm-3">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview" checked>
+                                            <div class="boxed-check-label">42m<sup>2</sup></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-4 col-sm-3">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">52m<sup>2</sup></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-4 col-sm-3">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">62m<sup>2</sup></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-4 col-sm-3">
+                                        <label class="boxed-check rounded-3">
+                                            <input class="boxed-check-input" type="radio" name="radio-overview">
+                                            <div class="boxed-check-label">72m<sup>2</sup></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <h5 class="text-uppercase text-white fs-7 fw-normal mb-2">barchasi</h5>
+                        <h5 class="text-white fs-2 fw-normal">200 000 000 so’m</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== MORTGAGE | Omonjon ====================-->
+    <section class="mortgage-section py-5">
+        <div class="container px-2 px-sm-0 py-0 py-lg-4">
+
+        </div>
+    </section>
 </main>
 
 <!--================ FOOTER | Omonjon ================-->
+
 
 <!--================ SCROLL UP | Omonjon ================-->
 <a href="#" class="scroll_up" id="scroll-up">
@@ -427,12 +582,6 @@
 
 <!--================ SWIPER JS 8.1.1v | Omonjon ================-->
 <script src="assets/script/swiper-bundle.min.js"></script>
-
-<!--================  AOS JS 3.1.3v | Omonjon ================-->
-<script src="assets/script/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 
 <!--================ MAIN JS | Omonjon ================-->
 <script src="assets/script/main.js?v=0.0.2"></script>
