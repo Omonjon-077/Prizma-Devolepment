@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
     <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.3">
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.4">
     <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.2">
 
     <title>Prizma Devolepment</title>
@@ -558,7 +558,46 @@
     <!--==================== MORTGAGE | Omonjon ====================-->
     <section class="mortgage-section py-5">
         <div class="container px-2 px-sm-0 py-0 py-lg-4">
-
+            <div class="d-flex flex-column bg-white primary-shadow rounded-3 p-3 p-sm-5">
+                <h4 class="fs-2 text-black fw-normal mb-4">Ipoteka rasmiylashtirish</h4>
+                <form action="" class="row row-gap-3" method="POST">
+                    <div class="col-12 col-sm-6">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-black fs-6 fw-normal">Uyning bahosi</label>
+                            <input required autocomplete="off" type="number" placeholder="Min: 150 mln so’m"
+                                   class="form-control mb-3"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="range" value="10" min="0" max="100" step="1" class="progress progress-1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label text-black fs-6 fw-normal">Boshlang’ich to’lov</label>
+                            <input required autocomplete="off" type="number" placeholder="Min: 50 000 000 so’m"
+                                   class="form-control mb-3"
+                                   id="exampleInputPassword1">
+                            <input type="range" value="10" min="0" max="100" step="1" class="progress progress-2">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail2" class="form-label text-black fs-6 fw-normal">Foiz stavkasi</label>
+                            <input required autocomplete="off" type="number" placeholder="24,55"
+                                   class="form-control mb-3"
+                                   id="exampleInputEmail2" aria-describedby="emailHelp">
+                            <input type="range" value="10" min="0" max="100" step="1" class="progress progress-3">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword2" class="form-label text-black fs-6 fw-normal">Kredit muddati</label>
+                            <input required autocomplete="off" type="number" placeholder="1" class="form-control mb-3"
+                                   id="exampleInputPassword2">
+                            <input type="range" value="10" min="0" max="100" step="1" class="progress progress-4">
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn-primary py-2 px-sm-5 px-3 outline-none border-none">Hisoblash
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 </main>
@@ -584,6 +623,6 @@
 <script src="assets/script/swiper-bundle.min.js"></script>
 
 <!--================ MAIN JS | Omonjon ================-->
-<script src="assets/script/main.js?v=0.0.2"></script>
+<script src="assets/script/main.js?v=0.0.3"></script>
 </body>
 </html>
