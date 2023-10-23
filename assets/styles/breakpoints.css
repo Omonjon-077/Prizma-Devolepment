@@ -32,4 +32,8 @@
     .site-logo{
         width: 150px;
     }
+
+    .footer-form{
+        width: 270px !important;
+    }
 }

@@ -161,6 +161,10 @@ input[type=number] {
     transform: rotate(180deg);
 }
 
+.border-gray{
+    border-color: var(--bs-gray) !important;
+}
+
 .z-index-2 {
     z-index: 2;
 }
@@ -398,10 +402,15 @@ a {
 .progress::-webkit-slider-thumb {
     width: 30px;
     height: 30px;
-    /*border-radius: 50% !important;*/
+    border-radius: 50% !important;
     -webkit-appearance: none;
     cursor: ew-resize;
     background: url("../images/svg/range-icon.svg") no-repeat center/cover;
+}
+
+/*=============== FOOTER | Omonjon ===============*/
+.footer-form{
+    width: 380px !important;
 }
 
 /*=============== SCROLL BAR | Omonjon ===============*/
