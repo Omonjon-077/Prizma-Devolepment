@@ -1,3 +1,4 @@
+'use strict'
 /*=============== LOADER ===============*/
 document.addEventListener('DOMContentLoaded', function (eventObject) {
     $('.load').fadeIn();
