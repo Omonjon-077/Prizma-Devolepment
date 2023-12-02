@@ -24,14 +24,14 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
     <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.5">
-    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.3">
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.6">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.4">
 
     <title>Prizma Devolepment</title>
 </head>
 <body>
 <!--================ LOADER | Omonjon ================-->
-<div class="load d-none" id="load">
+<div class="load" id="load">
     <lottie-player autoplay loop mode="normal" src="assets/jsons/loader.json" class="load-gif">
     </lottie-player>
 </div>
@@ -59,6 +59,11 @@
                                     <li><a class="text-white-50" href="#">Joylashuvi</a></li>
                                     <li><a class="text-white-50" href="#">Biz bilan bog’laning</a></li>
                                 </ul>
+                                <div class="d-flex align-items-center column-gap-2">
+                                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/facebook.svg"></a>
+                                    <a href="#!" class="primary-hover"><img alt=""
+                                                                            src="assets/images/svg/instagram.svg"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,37 +79,38 @@
         <div class="container px-sm-0">
             <div class="d-flex align-items-center justify-content-between">
                 <a class="d-flex align-items-center site-logo" href="#"><img alt="LOGO" class="w-100"
-                                                                             src="assets/images/site-logo.png"></a>
+                                                                             src="assets/images/svg/site-logo.svg"></a>
                 <ul class="d-lg-flex d-none align-items-center column-gap-4">
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page"
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
                            href="#about-project">Loyiha
                             haqida</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page"
-                           href="#building-section">Xususiyatlari</a>
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
+                           href="#building-section">Afzalliklari</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page"
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
                            href="#photos-section">Fotosuratlar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page"
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
                            href="#location-section">Joylashuvi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-gray fs-7 fw-normal" aria-current="page" href="#footer">Biz
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page" href="#footer">Biz
                             bilan bog’laning</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center column-gap-2">
-                    <a href="#!" class="primary-hover"><img src="assets/images/svg/facebook.svg"></a>
-                    <a href="#!" class="primary-hover"><img src="assets/images/svg/instagram.svg"></a>
+                <div class="d-flex align-items-center column-gap-2 d-none d-sm-block">
+                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/facebook.svg"></a>
+                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/instagram.svg"></a>
                 </div>
-                <a href="tel:+998555152222" class="text-primary fs-4 fw-bolder"><i
-                        class='bx bx-phone-call d-block d-sm-none d-lg-block d-xl-none'></i><span
-                        class="d-none d-sm-block d-lg-none d-xl-block">+55 515 22 22</span></a>
+                <a href="tel:+998555152222" class="text-primary fs-4 fw-bold"><span
+                        class="d-none d-sm-block d-lg-none d-xl-block">+55 515 22 22</span><i
+                        class="bx bx-phone d-none d-lg-block d-xl-none"></i></a>
+                <a href="tel:+998555152222" class="text-primary fs-7 fw-bold d-block d-sm-none">+55 515 22 22</a>
                 <button type="button"
                         class="outline-none border-none bg-transparent d-lg-none d-flex align-items-center justify-content-center"
                         data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -121,12 +127,14 @@
     <section class="intro-section">
         <div class="container">
             <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                <h4 class="fs-1 fw-bold text-center text-uppercase text-white">Saxovat turar joy <br> <span
-                        class="text-secondary">majmuasi</span></h4>
-                <p class="fs-6 text-white text-center fw-normal mt-3 mb-4">Oilaviy yashash uchun zarur shart-sharoitlar
+                <h4 class="fs-1 fw-bold text-center text-uppercase text-white">Saxovat<br> <span
+                        class="text-secondary text-uppercase">turar-joy majmuasi</span></h4>
+                <div class="fs-6 text-white text-center fw-normal mt-3 mb-4 fs-18pxMb">Oilaviy yashash uchun zarur
+                    shart-sharoitlar
                     bilan
-                    ta'minlangan <br> zamonaviy turar-joy majmuasi</p>
-                <a class="btn-primary py-2 px-3" href="#!">Ariza qoldirish</a>
+                    ta'minlangan <br> zamonaviy turar-joy majmuasi
+                </div>
+                <a class="btn-primary py-2 px-3 w-100Mb text-center" href="#!">Ariza qoldirish</a>
             </div>
         </div>
     </section>
@@ -136,22 +144,24 @@
         <div class="container">
             <div class="px-xl-5">
                 <div class="row row-gap-3 justify-content-center">
-                    <div class="col-6 col-sm-4">
+                    <div class="col-12 col-sm-4">
                         <div class="d-flex flex-column align-items-center border-lg-end">
                             <h4 class="fs-1 text-primary fw-bold">8 ta</h4>
-                            <p class="fs-7 text-gray">Blok</p>
+                            <div class="fs-7 text-gray opacity-7">Blok</div>
+                            <img src="assets/images/svg/borderB.svg" alt="" class="d-block d-sm-none">
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div class="col-12 col-sm-4">
                         <div class="d-flex flex-column align-items-center border-lg-end">
                             <h4 class="fs-1 text-primary fw-bold">600+</h4>
-                            <p class="fs-7 text-gray">xonadonlar</p>
+                            <div class="fs-7 text-gray opacity-7">xonadonlar</div>
+                            <img src="assets/images/svg/borderB.svg" alt="" class="d-block d-sm-none">
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div class="col-12 col-sm-4">
                         <div class="d-flex flex-column align-items-center">
-                            <h4 class="fs-1 text-primary fw-bold">26+</h4>
-                            <p class="fs-7 text-gray">Uy rejalari</p>
+                            <h4 class="fs-1 text-primary fw-bold">12+</h4>
+                            <div class="fs-7 text-gray opacity-7">Uy rejalari</div>
                         </div>
                     </div>
                 </div>
@@ -163,7 +173,10 @@
     <section class="about-project py-5" id="about-project">
         <div class="container">
             <h4 class="section-title d-none d-xl-block no-select">Loyiha haqida</h4>
-            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary">Loyiha haqida</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary fs-24pxMb">Loyiha haqida</h4>
+            <div class="d-flex justify-content-center d-block d-sm-none">
+                <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
+            </div>
         </div>
         <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
             <img class="" alt="" src="assets/images/yellow-line.jpg">
@@ -172,19 +185,22 @@
             <div class="row row-gap-4">
                 <div class="col-12 col-lg-6">
                     <div class="d-flex flex-column position-relative">
-                        <p class="fs-7 text-gray fw-normal text-center text-lg-start">Lorem ipsum dolor sit amet
-                            consectetur. Eget ac tincidunt id posuere risus. Nullam faucibus
-                            sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet ipsum pretium sit.
-                            Sed molestie condimentum ultrices purus diam amet. Aenean morbi faucibus nisl ac sodales
-                            nibh dignissim maecenas nunc. </p>
-                        <p class="fs-7 text-gray fw-normal text-center text-lg-start my-4">Vitae quam id massa risus
-                            nulla purus dapibus lectus. Volutpat sollicitudin urna nulla arcu
-                            eu in ipsum dui condimentum. Ullamcorper pellentesque sed scelerisque leo adipiscing
-                            facilisi. Quam pretium tellus id semper vel enim scelerisque. In sed tempor cursus eu orci
-                            vel.</p>
-                        <p class="fs-7 text-gray fw-normal text-center text-lg-start">onec proin feugiat feugiat sit
-                            cras eu dapibus. Tellus auctor rhoncus donec ut id enim eget
-                            volutpat. Condimentum donec a suscipit.</p>
+                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start">"Saxovat" turar-joy majmuasi —
+                            Farg'ona viloyati, Buvayda tumani, Yangiqo’rg’on shaharchasi istiqbolli manzillaridan birida
+                            qad ko'tarayotgan yangi turar joy majmuasi. Xonadonlar Prizma Development kompaniyasi
+                            tomonidan milliy uslub va zamonbob infratuzilma mujassamligida yaratatilmoqda.
+                        </div>
+                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start my-4">Majmua ulkan hududni o'z
+                            ichiga olgan bo'lib, u ketma-ketlikda qurib bitkazilayotgan 8 ta blok turar-joy binolaridan
+                            tashkil topgan. Mijozlar uchun mazkur binolarning barcha 7 qavatida turar-joy maydonlarini
+                            hamda tom qavatini 7-qavatga qo’shilgan holda xarid qilish imkoniyatlari taklif etilmoqda.
+                        </div>
+                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start">Shinam xonadonlar keng turdagi
+                            oilalarning xohishlariga
+                            mos kelishi g’oyasi bilan bunyod etilmoqda. 8 turdan ziyod
+                            uy rejalari ham yoshlar, ham ko'p farzandli ota-onalarning talablarini qondirishiga
+                            ishonchimiz komil.
+                        </div>
                         <div class="position-absolute position-left d-none d-lg-block">
                             <img src="./assets/images/vector-logo.png" alt="Site logo" class="">
                         </div>
@@ -216,8 +232,11 @@
     <section id="building-section" class="building-section py-5">
         <div class="container">
             <h4 class="section-title d-none d-xl-block no-select">Afzalliklarimiz</h4>
-            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary">Turar joy majmuasining
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary fs-24pxMb">Turar joy majmuasining
                 qulayliklari</h4>
+            <div class="d-flex justify-content-center d-block d-sm-none">
+                <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
+            </div>
         </div>
         <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
             <img class="" alt="" src="assets/images/yellow-line.jpg">
@@ -225,121 +244,124 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-xl-2 d-none d-xl-block">
-                    <div class="d-flex">
+                    <div class="d-flex d-none d-md-block">
                         <img class="" alt="" src="assets/images/comforts-1.jpg">
                     </div>
                 </div>
                 <div class="col-12 col-xl-10">
                     <div class="row row-gap-4">
                         <div class="col-12 col-sm-6">
-                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                            <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center row-gap-3">
                                 <div class="">
                                     <img class="" alt="Logo" src="./assets/images/svg/building-1.svg">
                                 </div>
-                                <h4 class="text-primary fs-5 fw-normal">Har tomonlama zamonaviy</h4>
-                                <p class="fs-7 text-gray fw-normal">
-                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
-                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
-                                    ipsum pretium sit.
-                                </p>
+                                <h4 class="text-primary fs-5 fw-bold fs-18pxMb">Har tomonlama zamonaviy</h4>
+                                <div class="fs-7 text-gray fw-normal text-center text-md-start fs-14pxMb">
+                                    Xorijiy mutaxassislar bilan hamkorlik turar-joy majmuasi uchun joy tanlovi
+                                    bosqichidan boshlab, qurilishning to’liq topshirilishigacha bo’lgan bosqichlarni o’z
+                                    ichiga oladi. Qator Yevropa va Osiyo kompaniyalarining qulaylik, mustahkamlik,
+                                    boshqaruv sohalaridagi tajribalari “Saxovat” turar-joy majmuasida namoyon bo’ladi.
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6">
-                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                            <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center row-gap-3">
                                 <div class="">
                                     <img class="" alt="Logo" src="./assets/images/svg/building-2.svg">
                                 </div>
-                                <h4 class="text-primary fs-5 fw-normal">Avtoturargoh</h4>
-                                <p class="fs-7 text-gray fw-normal">
-                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
-                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
-                                    ipsum pretium sit.
-                                </p>
+                                <h4 class="text-primary fs-5 fw-bold fs-18pxMb">Avtoturargoh</h4>
+                                <div class="fs-7 text-gray fw-normal text-center text-md-start fs-14pxMb">
+                                    Shaxsiy avtomobilingizning ishonchli va xavfsiz joyda saqlanishi bilan bir qatorda
+                                    majmua bo'ylab oson harakatlanishini inobatga oluvchi avtoturargoh o'rin olgan.
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6">
-                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                            <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center row-gap-3">
                                 <div class="">
                                     <img class="" alt="Logo" src="./assets/images/svg/building-3.svg">
                                 </div>
-                                <h4 class="text-primary fs-5 fw-normal">Tozalik va havfsizlik</h4>
-                                <p class="fs-7 text-gray fw-normal">
-                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
-                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
-                                    ipsum pretium sit.
-                                </p>
+                                <h4 class="text-primary fs-5 fw-bold fs-18pxMb">Tozalik va yashil hududlar</h4>
+                                <div class="fs-7 text-gray fw-normal text-center text-md-start fs-14pxMb">
+                                    Turar-joy majmuasi ozodaligi majmua boshqaruv kompaniyasining mustahkam nazorat
+                                    ostida. Ob-havo sharoitidan qat'iy nazar umumiy maydonlar tozaligi maxsus jamoa
+                                    tomonidan nazoratida bo'ladi. Qo’shnilar bilan hamjihatlikdagi hayot tarzingiz uchun
+                                    umumiy yashil hududlar ham barpo etiladi.
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6">
-                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                            <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center row-gap-3">
                                 <div class="">
                                     <img class="" alt="Logo" src="./assets/images/svg/building-4.svg">
                                 </div>
-                                <h4 class="text-primary fs-5 fw-normal">Uzlukliz issiqlik ta'minoti</h4>
-                                <p class="fs-7 text-gray fw-normal">
-                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
-                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
-                                    ipsum pretium sit.
-                                </p>
+                                <h4 class="text-primary fs-5 fw-bold fs-18pxMb">Uzlukliz issiqlik ta'minoti</h4>
+                                <div class="fs-7 text-gray fw-normal text-center text-md-start fs-14pxMb">
+                                    Qish mavsumining boshlanishi va yakunlanishi endi sizning talablaringizga bog'liq.
+                                    Majmua uchun uzluksiz gaz ta’minoti hamda har bir xonadon uchun alohida ko'zda
+                                    tutilgan isitish tizimi yordamida isish harorati va muddatlarini o'zingiz
+                                    belgilaysiz.
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6">
-                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                            <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center row-gap-3">
                                 <div class="">
                                     <img class="" alt="Logo" src="./assets/images/svg/building-5.svg">
                                 </div>
-                                <h4 class="text-primary fs-5 fw-normal">Elektr energiyasi ta'minoti</h4>
-                                <p class="fs-7 text-gray fw-normal">
-                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
-                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
-                                    ipsum pretium sit.
-                                </p>
+                                <h4 class="text-primary fs-5 fw-bold fs-18pxMb">Elektr energiyasi ta'minoti</h4>
+                                <div class="fs-7 text-gray fw-normal text-center text-md-start fs-14pxMb">
+                                    “Saxovat” ko'p qavatli turar-joy majmuasining xususiy elektr energiya ta'minoti
+                                    tizimi xonadon ehtiyojlarini to'liq nazoratga olish uchun jihozlangan.
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6">
-                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                            <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center row-gap-3">
                                 <div class="">
                                     <img class="" alt="Logo" src="./assets/images/svg/building-6.svg">
                                 </div>
-                                <h4 class="text-primary fs-5 fw-normal">Qo'riqlanuvchi hudud</h4>
-                                <p class="fs-7 text-gray fw-normal">
-                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
-                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
-                                    ipsum pretium sit.
-                                </p>
+                                <h4 class="text-primary fs-5 fw-bold fs-18pxMb">Qo'riqlanadigan hudud</h4>
+                                <div class="fs-7 text-gray fw-normal text-center text-md-start fs-14pxMb">
+                                    Oila a'zolaringiz va shaxsiy mulkingiz xavfsizligini turar-joy majmuasi yordamida
+                                    ta'minlang. 24/7 qo'riqlash imkoniyatlari hududga begonalarning nazoratsiz kira
+                                    olmasligi hamda maydon doimo kuzatuv kameralari nazorati ostida bo'lishini inobatga
+                                    oladi.
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6">
-                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                            <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center row-gap-3">
                                 <div class="">
                                     <img class="" alt="Logo" src="./assets/images/svg/building-7.svg">
                                 </div>
-                                <h4 class="text-primary fs-5 fw-normal">Bolalar bog'chasi</h4>
-                                <p class="fs-7 text-gray fw-normal">
-                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
-                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
-                                    ipsum pretium sit.
-                                </p>
+                                <h4 class="text-primary fs-5 fw-bold fs-18pxMb">Bolalar bog'chasi</h4>
+                                <div class="fs-7 text-gray fw-normal text-center text-md-start fs-14pxMb">
+                                    Majmuaning zamonaviy infratuzilmasi asosiy e'tibori oila a'zolaringiz qulayligini
+                                    imkon qadar to'liq ta'minlashga qaratilgan. Bolalarning ta'lim-tarbiya olish uchun
+                                    uzoq yo'l va vaqt sarflamasliklari uchun majmua hududida zamonaviy va milliy tarbiya
+                                    talablarini inobatga olgan bolalar bog'chasi bunyod etilmoqda.
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6">
-                            <div class="d-flex flex-column align-items-start justify-content-center row-gap-3">
+                            <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center row-gap-3">
                                 <div class="">
                                     <img class="" alt="Logo" src="./assets/images/svg/building-8.svg">
                                 </div>
-                                <h4 class="text-primary fs-5 fw-normal">Uyingiz yaqinidagi bog'cha</h4>
-                                <p class="fs-7 text-gray fw-normal">
-                                    Lorem ipsum dolor sit amet consectetur. Eget ac tincidunt id posuere risus. Nullam
-                                    faucibus sagittis a consectetur aliquam eget ac ut netus. At pellentesque at amet
-                                    ipsum pretium sit.
-                                </p>
+                                <h4 class="text-primary fs-5 fw-bold fs-18pxMb">Uyingiz yaqinidagi maktab</h4>
+                                <div class="fs-7 text-gray fw-normal text-center text-md-start fs-14pxMb">
+                                    Yosh avlod sifatli ta'lim olishi uchun xonadon egalari talablariga mos keluvchi
+                                    maktab loyihaning yonginasida joylashgan. Bolalar turar-joy majmuasidan maktabgacha
+                                    piyoda yetib olishlari hamda xavfsiz yo’laklardan yurishlari nazoratga olingan.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -349,7 +371,7 @@
     </section>
 
     <!--==================== PHOTOS | Omonjon ====================-->
-    <section id="photos-section" class="photos-section py-5 bg-primary">
+    <section id="photos-section" class="photos-section py-5 bg-primary d-none d-sm-block">
         <div class="container">
             <h4 class="section-title text-white d-none d-xl-block no-select">Fotosuratlar</h4>
             <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-white">Sizning kelajakdagi uyingiz
@@ -401,15 +423,8 @@
     </section>
 
     <!--==================== LOCATION | Omonjon ====================-->
-    <section id="location-section" class="location-section py-5">
+    <section id="location-section" class="location-section py-5 d-none d-sm-block">
         <div class="container">
-            <h4 class="section-title text-primary d-none d-xl-block no-select">Joylashuvimiz</h4>
-            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary">Loyiha manzili</h4>
-        </div>
-        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
-            <img class="" alt="" src="assets/images/yellow-line.jpg">
-        </div>
-        <div class="container  pt-5">
             <div class="d-flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23972.07061162338!2d69.25769359431338!3d41.319547687002526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1697280226385!5m2!1sru!2s"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -423,7 +438,10 @@
         <h4 class="section-title text-center text-uppercase text-white d-none d-xl-block no-select">uy rejalari va
             narxlari</h4>
         <div class="container">
-            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-white">uy rejalari va narxlari</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-white fs-24pxMb">uy rejalari va narxlari</h4>
+            <div class="d-flex justify-content-center d-block d-sm-none">
+                <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
+            </div>
         </div>
         <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
             <img class="" alt="" src="assets/images/yellow-line.jpg">
@@ -432,36 +450,37 @@
             <div class="row row-gap-3">
                 <div class="col-12 col-lg-6">
                     <div class="d-flex align-items-center justify-content-center h-100">
-                        <img src="./assets/images/home-price.png" alt="Img" class="w-100">
+                        <img src="./assets/images/home-price.png" alt="Img" style="max-width: 423px;max-height: 670px;"
+                             class="w-100">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="d-flex flex-column align-items-start border border-1 border-white rounded-3 p-md-5 p-3">
-                        <h4 class="fs-2 mb-4 text-white fw-bold">Xonadon turini tanlang</h4>
+                        <h4 class="fs-2 mb-4 text-white fw-bold fs-24pxMb text-center text-md-start">Xonadon turini tanlang</h4>
 
-                        <h6 class="text-white fw-normal mb-2 fs-6">Xonalar</h6>
+                        <h6 class="text-white fw-normal mb-2 fs-6 fs-18pxMb">Xonalar</h6>
                         <form action="" class="mb-4" method="">
                             <div class="overview-radio">
-                                <div class="row boxed-check-group boxed-check-success">
-                                    <div class="col-3">
+                                <div class="row boxed-check-group boxed-check-success row-gap-3">
+                                    <div class="col-6">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview" checked>
                                             <div class="boxed-check-label">1</div>
                                         </label>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-6">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">2</div>
                                         </label>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-6">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">3</div>
                                         </label>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-6">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">4</div>
@@ -471,41 +490,41 @@
                             </div>
                         </form>
 
-                        <h6 class="text-white fw-normal mb-2 fs-6">Qavat</h6>
+                        <h6 class="text-white fw-normal mb-2 fs-6 fs-18pxMb">Qavat</h6>
                         <form action="" class="mb-4" method="">
                             <div class="overview-radio">
                                 <div class="row boxed-check-group boxed-check-success row-gap-3">
-                                    <div class="col-3 col-sm-2">
+                                    <div class="col-4 col-sm-2">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview" checked>
                                             <div class="boxed-check-label">1</div>
                                         </label>
                                     </div>
-                                    <div class="col-3 col-sm-2">
+                                    <div class="col-4 col-sm-2">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">2</div>
                                         </label>
                                     </div>
-                                    <div class="col-3 col-sm-2">
+                                    <div class="col-4 col-sm-2">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">3</div>
                                         </label>
                                     </div>
-                                    <div class="col-3 col-sm-2">
+                                    <div class="col-4 col-sm-2">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">4</div>
                                         </label>
                                     </div>
-                                    <div class="col-3 col-sm-2">
+                                    <div class="col-4 col-sm-2">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">5</div>
                                         </label>
                                     </div>
-                                    <div class="col-3 col-sm-2">
+                                    <div class="col-4 col-sm-2">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">6</div>
@@ -515,29 +534,29 @@
                             </div>
                         </form>
 
-                        <h6 class="text-white fw-normal mb-2 fs-6">Kvadraturasi</h6>
+                        <h6 class="text-white fw-normal mb-2 fs-6 fs-18pxMb">Kvadraturasi</h6>
                         <form action="" class="mb-5" method="">
                             <div class="overview-radio">
                                 <div class="row boxed-check-group boxed-check-success row-gap-3">
-                                    <div class="col-4 col-sm-3">
+                                    <div class="col-6 col-sm-3">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview" checked>
                                             <div class="boxed-check-label">42m<sup>2</sup></div>
                                         </label>
                                     </div>
-                                    <div class="col-4 col-sm-3">
+                                    <div class="col-6 col-sm-3">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">52m<sup>2</sup></div>
                                         </label>
                                     </div>
-                                    <div class="col-4 col-sm-3">
+                                    <div class="col-6 col-sm-3">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">62m<sup>2</sup></div>
                                         </label>
                                     </div>
-                                    <div class="col-4 col-sm-3">
+                                    <div class="col-6 col-sm-3">
                                         <label class="boxed-check rounded-3">
                                             <input class="boxed-check-input" type="radio" name="radio-overview">
                                             <div class="boxed-check-label">72m<sup>2</sup></div>
@@ -547,8 +566,94 @@
                             </div>
                         </form>
 
-                        <h5 class="text-uppercase text-white fs-7 fw-normal mb-2">barchasi</h5>
-                        <h5 class="text-white fs-2 fw-normal">200 000 000 so’m</h5>
+                        <h5 class="text-uppercase text-white fs-7 fs-14pxMb fw-normal mb-2">Xonadon to’liq narxi</h5>
+                        <h5 class="text-white fs-2 fw-normal fs-24pxMb">725 000 000 so’m</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== CALCULATOR  | Omonjon ====================-->
+    <section id="calculator-section" class="calculator-section py-5">
+        <div class="container">
+            <h4 class="section-title text-primary d-none d-xl-block no-select">muddatli to’lov </h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary fs-24pxMb">muddatli to’lov hisobi</h4>
+            <div class="d-flex justify-content-center d-block d-sm-none">
+                <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
+            </div>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container mt-4 mt-lg-5">
+            <div class="row row-gap-3">
+                <div class="col-12 col-xl-4">
+                    <div class="d-flex flex-column">
+                        <div class="text-gray fs-7 fs-14pxMb fw-normal mb-4 text-center text-md-start">
+                            Xonadonlarni xarid qilishda siz kompaniya tomonidan taqdim etilayotgan qulay muddatli to’lov
+                            shartlarini tanlashingiz mumkin.
+                        </div>
+                        <div class="text-gray fs-7 fs-14pxMb fw-normal mb-4 text-center text-md-start">
+                            Loyiha qurilishi jarayonida 30% boshlang’ich to’lovni amalga oshirib, 40% qismini 24 oyda
+                            muddatli to’lov shartlarida hamda qoldiq 30% ipoteka asosida amalga oshiriladi.
+                        </div>
+                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb">30% - Boshlang'ich
+                            to'lov</h4>
+                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb my-1">40% - 24 Oylik
+                            to'lovga</h4>
+                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb">30% - Kadastr bilan
+                            ipotekaga</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <div class="p-4" style="border: 1px solid #C9C9C9;">
+                        <form action="" class="row row-gap-3" method="POST">
+                            <div class="col-12 col-sm-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail5"
+                                           class="form-label text-black fs-6 fw-normal fs-16pxMb">Uyning
+                                        umumiy narxi</label>
+                                    <input required autocomplete="off" type="number" placeholder="Min: 50 000 000 so’m"
+                                           class="form-control mb-3"
+                                           id="exampleInputEmail5" aria-describedby="emailHelp">
+                                    <input type="range" value="10" min="0" max="100" step="1" class="progress">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword6"
+                                           class="form-label text-black fs-6 fw-normal fs-16pxMb">Boshlang’ich
+                                        to’lov</label>
+                                    <input required autocomplete="off" type="number" placeholder="1"
+                                           class="form-control mb-3"
+                                           id="exampleInputPassword6">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail7"
+                                           class="form-label text-black fs-6 fw-normal fs-16pxMb">Oylik
+                                        to'lov</label>
+                                    <input required autocomplete="off" type="number" placeholder="1"
+                                           class="form-control mb-3"
+                                           id="exampleInputEmail7" aria-describedby="emailHelp">
+                                    <input type="range" value="10" min="0" max="100" step="1" class="progress no-select"
+                                           style="opacity: 0">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword8"
+                                           class="form-label text-black fs-6 fw-normal fs-16pxMb">Kadastr
+                                        olingandan keyingi to'lov</label>
+                                    <input required autocomplete="off" type="number" placeholder="1"
+                                           class="form-control mb-3"
+                                           id="exampleInputPassword8">
+                                </div>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn-primary py-2 px-sm-5 px-3 outline-none border-none w-100Mb">
+                                    Hisoblash
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -557,7 +662,7 @@
 
     <!--==================== MORTGAGE | Omonjon ====================-->
     <section class="mortgage-section py-5">
-        <div class="container  py-0 py-lg-4">
+        <div class="container py-0 py-lg-4">
             <div class="d-flex flex-column bg-white primary-shadow rounded-3 p-3 p-sm-5">
                 <h4 class="fs-2 text-black fw-normal mb-4">Ipoteka rasmiylashtirish</h4>
                 <form action="" class="row row-gap-3" method="POST">
@@ -597,7 +702,7 @@
                         </div>
                     </div>
                     <div class="">
-                        <button type="submit" class="btn-primary py-2 px-sm-5 px-3 outline-none border-none">Hisoblash
+                        <button type="submit" class="btn-primary py-2 px-sm-5 px-3 outline-none border-none w-100Mb">Hisoblash
                         </button>
                     </div>
                 </form>
@@ -609,12 +714,12 @@
 <!--================ FOOTER | Omonjon ================-->
 <footer class="footer bg-primary py-5" id="footer">
     <div class="container">
-        <div class="d-flex flex-wrap row-gap-3 justify-content-between pb-4 border-bottom border-gray">
-            <div class="d-flex flex-column">
+        <div class="d-flex flex-wrap row-gap-3 justify-content-md-between align-items-center pb-4 border-bottom border-gray">
+            <div class="d-flex flex-column justify-content-center align-items-center mx-auto me-md-auto ms-md-0">
                 <a href="#!" class="mb-2"><img src="./assets/images/svg/site-logo-f.svg" alt="Logo"></a>
                 <p class="text-white fs-8 fw-normal mb-4">Zamonaviy va ishochli uylar binokori</p>
                 <form action=""
-                      class="footer-form p-3 border-1 border bg-transparent rounded-3 d-flex align-items-center column-gap-3 border-gray"
+                      class="footer-form p-3 border-1 border bg-transparent rounded-3 d-flex align-items-center column-gap-3 border-gray d-none"
                       method="POST">
                     <input type="text" placeholder="Email..."
                            class="w-100 text-white outline-none border-none bg-transparent" required>
@@ -622,25 +727,25 @@
                             src="./assets/images/svg/send.svg" alt="Icon"></button>
                 </form>
             </div>
-            <div class="d-flex flex-wrap row-gap-3 column-gap-5">
-                <ul class="d-flex flex-column row-gap-2">
-                    <h5 class="fs-6 text-white fw-normal mb-2">Bosh sahifa</h5>
-                    <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">Biz haqimizda</a></li>
+            <div class="d-flex flex-wrap row-gap-3 column-gap-5 mx-auto ms-md-auto me-md-0 justify-content-center justify-content-md-end">
+                <ul class="d-flex flex-column row-gap-2 align-items-center align-items-md-start">
+                    <h5 class="fs-6 text-white fw-normal mb-3">Bosh sahifa</h5>
+                    <li><a href="about.html" class="fs-7 text-white opacity-7 fw-normal">Biz haqimizda</a></li>
                     <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">FAQ</a></li>
-                    <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">Fotosuratlar</a></li>
-                    <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">Joylashuvi</a></li>
+                    <li><a href="#about-project" class="fs-7 text-white opacity-7 fw-normal">Loyihalar</a></li>
                 </ul>
-                <ul class="d-flex flex-column row-gap-2">
-                    <h5 class="fs-6 text-white fw-normal mb-2">Biz bilan bog’laning</h5>
+                <ul class="d-flex flex-column row-gap-2 align-items-center align-items-md-start">
+                    <h5 class="fs-6 text-white fw-normal mb-3">Biz bilan bog’laning</h5>
                     <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">Kontaklar</a></li>
                     <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">Aloqa markazi</a></li>
                 </ul>
             </div>
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-between pt-4 row-gap-3">
-            <p class="fs-8 text-white opacity-7 fw-normal ">© 2023 Prizma Development LTD. Copyright and rights
-                reserved</p>
-            <ul class="d-flex column-gap-2">
+            <p class="fs-8 text-white opacity-7 fw-normal text-center text-md-start">© 2024 Prizma Development Co MChJ.
+                Barcha huquqlar
+                himoyalangan </p>
+            <ul class="d-flex column-gap-2 d-none">
                 <li><a href="#!" class="text-white opacity-7 fs-8 fw-normal">Terms and Condtions</a></li>
                 <img src="./assets/images/svg/dot.svg" class="" alt="Icon">
                 <li><a href="#!" class="text-white opacity-7 fs-8 fw-normal">Privacy Policy</a></li>
@@ -667,6 +772,6 @@
 <script src="assets/script/swiper-bundle.min.js"></script>
 
 <!--================ MAIN JS | Omonjon ================-->
-<script src="assets/script/main.js?v=0.0.5"></script>
+<script src="assets/script/main.js?v=0.0.6"></script>
 </body>
 </html>

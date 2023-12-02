@@ -25,9 +25,32 @@ if ($("#myHeader").length) {
     }
 }
 
-/*=============== PARTNERS | SWIPER ===============*/
+/*=============== PHOTOS | SWIPER ===============*/
 if ($(".photoSwiper").length) {
     let swiper = new Swiper(".photoSwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: false,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+}
+
+/*=============== PROJECTS | SWIPER ===============*/
+if ($(".projectsSwiper").length) {
+    let swiper = new Swiper(".projectsSwiper", {
         slidesPerView: "auto",
         centeredSlides: true,
         spaceBetween: 30,
@@ -65,5 +88,3 @@ const scrollUp = () => {
         : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
-
-/*=============== LEARN JS ===============*/

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================ DESCRIPTION | Omonjon ================-->
+    <meta name="description" content="Prizma Devolepment veb-saytiga xush kelibsiz">
+
+    <!--================ FAVICON | Omonjon ================-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!--============== BOX ICONS CSS 2.1.4v | Omonjon ==============-->
+    <link rel="stylesheet" href="assets/styles/boxicons.min.css">
+
+    <!--================ SWIPER CSS 8.1.1v | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
+
+    <!--================ BOXED-CHECK CSS 1.0.7v | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/boxed-check.css">
+
+    <!--================ BOOTSTRAP CSS 5.3v | Omonjon ===============-->
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+
+    <!--================ STYLE CSS | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.6">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.4">
+
+    <title>Prizma Devolepment | About Us</title>
+</head>
+<body>
+<!--================ LOADER | Omonjon ================-->
+<div class="load" id="load">
+    <lottie-player autoplay loop mode="normal" src="assets/jsons/loader.json" class="load-gif">
+    </lottie-player>
+</div>
+
+<!--================ MENUS MODAL | Omonjon ================-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container-sm container-fluid d-flex">
+                    <button type="button" class="btn-close box-shadow-none px-0" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="modal-body bg-dark pt-md-5 pt-sm-3 pt-3">
+                <div class="container-sm container-fluid">
+                    <div class="row row-gap-3">
+                        <div class="col-12">
+                            <div class="d-flex flex-column align-items-center row-gap-2">
+                                <h3 class="fs-5 text-white">Prizma Devolepment</h3>
+                                <ul class="d-flex flex-column align-items-center row-gap-2">
+                                    <li><a class="text-white-50" href="#">Loyiha haqida</a></li>
+                                    <li><a class="text-white-50" href="#">Xususiyatlari</a></li>
+                                    <li><a class="text-white-50" href="#">Fotosuratlar</a></li>
+                                    <li><a class="text-white-50" href="#">Joylashuvi</a></li>
+                                    <li><a class="text-white-50" href="#">Biz bilan bog’laning</a></li>
+                                </ul>
+                                <div class="d-flex align-items-center column-gap-2">
+                                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/facebook.svg"></a>
+                                    <a href="#!" class="primary-hover"><img alt=""
+                                                                            src="assets/images/svg/instagram.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==================== HEADER | Omonjon ====================-->
+<header class="header">
+    <nav class="py-4" id="myHeader">
+        <div class="container px-sm-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <a class="d-flex align-items-center site-logo" href="index.html"><img alt="LOGO" class="w-100"
+                                                                             src="assets/images/svg/site-logo.svg"></a>
+                <ul class="d-lg-flex d-none align-items-center column-gap-4">
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
+                           href="#about-project">Loyiha
+                            haqida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
+                           href="#building-section">Afzalliklari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
+                           href="#photos-section">Fotosuratlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
+                           href="#location-section">Joylashuvi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page" href="#footer">Biz
+                            bilan bog’laning</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center column-gap-2 d-none d-sm-block">
+                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/facebook.svg"></a>
+                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/instagram.svg"></a>
+                </div>
+                <a href="tel:+998555152222" class="text-primary fs-4 fw-bold"><span
+                        class="d-none d-sm-block d-lg-none d-xl-block">+55 515 22 22</span><i
+                        class="bx bx-phone d-none d-lg-block d-xl-none"></i></a>
+                <a href="tel:+998555152222" class="text-primary fs-7 fw-bold d-block d-sm-none">+55 515 22 22</a>
+                <button type="button"
+                        class="outline-none border-none bg-transparent d-lg-none d-flex align-items-center justify-content-center"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fs-3 text-primary bx bx-menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--================ MAIN | Omonjon ================-->
+<main>
+    <!--==================== PRIZMA | Omonjon ====================-->
+    <section class="prizma-section position-relative py-xl-5 py-md-4 py-3">
+        <div class="yellow-line position-absolute d-xl-block d-none">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container bg-none">
+            <div class="row row-gap-3">
+                <div class="col-12 col-xl-6">
+                    <div class="d-flex flex-column position-relative">
+                        <div class="d-flex flex-column ps-xl-5 mt-xl-5 mt-3">
+                            <h6 class="section-title top-title d-none d-xl-block no-select position-absolute">
+                                Prizma</h6>
+                            <h4 class="text-primary text-center text-lg-start text-uppercase display-4 fw-bold">
+                                Prizma</h4>
+                            <h4 class="text-primary text-center text-lg-start text-uppercase display-4 fw-bold">
+                                Development</h4>
+                            <h6 class="section-title bottom-title d-none d-xl-block no-select position-absolute">
+                                Development</h6>
+                            <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="d-block d-sm-none"
+                                 style="transform: translateX(-10%); width: 216px; height: 3px">
+                            <div class="fs-4 text-gray text-center text-lg-start fw-normal">Zamonaviy va ishonchli uylar
+                                bunyodkori
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-xl-5 mt-3 d-sm-block d-none">
+                            <img src="./assets/images/prizma-intro1.jpg" alt="" class="w-100 z-index-5">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 d-sm-block d-none">
+                    <div class="row row-gap-3">
+                        <div class="col-xl-12 col-lg-6 col-12">
+                            <div class="d-flex mb-xl-3">
+                                <img src="./assets/images/prizma-intro2.jpg" alt=""
+                                     class="intro-rImg w-100 h-100 z-index-4">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-6 col-12">
+                            <div class="d-flex">
+                                <img src="./assets/images/prizma-intro3.jpg" alt="" style="height: 320px;"
+                                     class="intro-rImg2 w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex d-sm-none mt-3 mt-sm-0">
+                <div class="col-6">
+                    <div class="d-flex h-100">
+                        <img src="./assets/images/prizma-introMB-2.jpg" alt="" class="w-100 h-100">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column row-gap-2">
+                        <div class="d-flex">
+                            <img src="./assets/images/prizma-introMB-1.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="d-flex">
+                            <img src="./assets/images/prizma-introMB-3.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ABOUT US  | Omonjon ====================-->
+    <section id="aboutUs-section" class="aboutUs-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div class="d-flex w-100 justify-content-center justify-content-lg-start">
+                        <h4 class="opacity-50 fs-4 fs-20pxMb text-gray fs-bold mb-4 text-uppercase"
+                            style="letter-spacing: 4.8px;">Kompaniya haqida</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-5">
+                    <div class="d-flex flex-column">
+                        <div class="fs-6 text-gray fw-normal mb-3 text-center text-lg-start fs-14pxMb">
+                            PRIZMA DEVELOPMENT xalqimiz talablariga mos ko’p qavatli turar-joy majmualari va kottej
+                            uylarini qurishga ixtisoslashgan kompaniya
+                        </div>
+                        <div class="fs-6 text-gray fw-normal opacity-7 text-center text-lg-start fs-14pxMb">
+                            Kompaniyasi o’z oldiga keng qatlamdagi aholi uchun mustahkam va ishonchli xonadonlarni barpo
+                            etish maqsadini qo’yadi. Mazkur ustuvor intilishida kompaniya yetakchi O’zbekiston
+                            quruvchilari hamda ilg’or Xalqaro mutaxassislar tajribalariga tayanadi. Bundan tashqari, eng
+                            so’nggi tahlil usullari, zamonaviy qurilish texnologiyalari hamda ko’p yillik sinovdan
+                            o’tgan qurilish materiallarining turlari Kompaniya barpo etayotgan xonadonlarning
+                            mustahkamligi va yashash uchun qulay sharoitlarga ega bo’lishiga kafolat beradi.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 d-none d-xl-block"></div>
+                <div class="col-xl-2 d-none d-xl-block"></div>
+                <div class="col-12 col-xl-10 mt-xl-5 mt-md-4 mt-3">
+                    <div class="d-flex">
+                        <img src="./assets/images/about-usImg.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== PROJECTS | Omonjon ====================-->
+    <section id="projects-section" class="projects-section py-5 bg-primary">
+        <div class="container">
+            <h4 class="section-title text-white d-none d-xl-block no-select">Loyihalar</h4>
+            <h4 class="fs-2 fs-20pxMb fw-bold text-uppercase text-center text-lg-start text-white">Biznig Loyihalarimiz</h4>
+            <div class="d-flex justify-content-center d-block d-sm-none">
+                <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
+            </div>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="pt-5">
+            <div class="swiper projectsSwiper mb-5">
+                <div class="swiper-wrapper position-relative">
+                    <div class="swiper-slide">
+                        <div class="d-flex">
+                            <img src="./assets/images/slide-home1.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex">
+                            <img src="./assets/images/slide-home3.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex">
+                            <img src="./assets/images/slide-home3.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next pe-2 pe-lg-5 pe-md-4">
+                    <img class="d-none d-lg-flex" src="assets/images/svg/right-arrow.svg" alt="">
+                    <i class='bx bx-right-arrow-alt bx-md text-white d-flex d-lg-none'></i>
+                </div>
+                <div class="swiper-button-prev ps-2 ps-lg-5 ps-md-4">
+                    <img class="transform-180-deg d-none d-lg-flex" src="assets/images/svg/right-arrow.svg" alt="">
+                    <i class='bx bx-left-arrow-alt bx-md text-white d-flex d-lg-none'></i>
+                </div>
+                <div class="container-70 px-0">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <a href="#" class="btn-secondary rounded-0 py-2 px-3">Hammasini ko’rish</a>
+                        </div>
+                        <div class="col-auto">
+                            <div class="swiper-pagination text-white fs-2 d-flex align-items-end justify-content-end mt-4 position-relative">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FEEDBACK | Omonjon ====================-->
+    <section id="feedback-section" class="feedback-section py-5">
+        <div class="container">
+            <h4 class="section-title d-none d-xl-block no-select">Biz bilan Aloqa</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary fs-20pxMb">Biz bilan bog’laning</h4>
+            <div class="d-flex justify-content-center mt-2 d-block d-sm-none">
+                <img src="assets/images/svg/yellow-line-mb.svg" class="d-block d-sm-none" alt="">
+            </div>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container mt-xl-5 mt-md-4 mt-3">
+            <div class="row row-gap-4">
+                <div class="col-12 col-xl-5">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <div class="d-flex flex-column flex-sm-row column-gap-3 mb-3 align-items-center row-gap-3">
+                            <img src="./assets/images/svg/feedback-icon-1.svg" style="width: 60px;height: 60px;" alt=""
+                                 class="">
+                            <div class="d-flex flex-column justify-content-center">
+                                <h5 class="text-center text-sm-start fs-7 text-black fw-bld mb-1">Bizning Manzil</h5>
+                                <div class="text-center text-sm-start fs-8 text-gray fw-normal">
+                                    Farg'ona viloyati, Uchko'prik tumani, Uchko'prik QFY Turkiston ko'chasi, 47-uy
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row column-gap-3 mb-3 align-items-center row-gap-3">
+                            <img src="./assets/images/svg/feedback-icon-2.svg" style="width: 60px;height: 60px;" alt=""
+                                 class="">
+                            <div class="d-flex flex-column justify-content-center">
+                                <h5 class="fs-7 text-center text-sm-start text-black fw-bld mb-1">Telefon raqamimiz</h5>
+                                <div class="fs-8 text-center text-sm-start text-gray fw-normal">
+                                    +998 55 515 22 22
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row column-gap-3 mb-3 align-items-center row-gap-3">
+                            <img src="./assets/images/svg/feedback-icon-3.svg" style="width: 60px;height: 60px;" alt=""
+                                 class="">
+                            <div class="d-flex flex-column justify-content-center">
+                                <h5 class="fs-7 text-center text-sm-start text-black fw-bld mb-1">Email</h5>
+                                <div class="fs-8 text-center text-sm-start text-gray fw-normal">
+                                    info@prizmadevelopment.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex w-100 justify-content-center justify-content-lg-start">
+                            <h4 class="fs-4 text-black fw-bold mb-3 fs-20pxMb">Ijtimoiy tarmoqlarimiz</h4>
+                        </div>
+                        <div class="d-flex column-gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#!" class=""><img src="./assets/images/svg/socialN-1.svg" alt="" class=""></a>
+                            <a href="#!" class=""><img src="./assets/images/svg/socialN-2.svg" alt="" class=""></a>
+                            <a href="#!" class=""><img src="./assets/images/svg/socialN-3.svg" alt="" class=""></a>
+                            <a href="#!" class=""><img src="./assets/images/svg/socialN-4.svg" alt="" class=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-7">
+                    <div class="d-flex flex-column bg-white primary-shadow rounded-3 p-3 p-sm-5">
+                        <h5 class="fs-2 text-gray fw-normal mb-3 text-center text-lg-start fs-24pxMb">Ariza qoldiring</h5>
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label fs-16pxMb">Ism</label>
+                                <input type="text" required class="form-control" placeholder="Ismingizni kiriting"
+                                       id="exampleInputName" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputSurname" class="form-label fs-16pxMb">Familiya</label>
+                                <input type="text" required class="form-control" placeholder="Familiyangizni kiriting"
+                                       id="exampleInputSurname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPhone" class="form-label fs-16pxMb">Telefon raqami</label>
+                                <input type="text" required class="form-control" placeholder="+998 (00) 000 00 00"
+                                       id="exampleInputPhone">
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn-primary border-none outline-none py-2 px-3 w-100Mb">Qayta
+                                    qo’ng’iroq qiling
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--================ FOOTER | Omonjon ================-->
+<footer class="footer bg-primary py-5" id="footer">
+    <div class="container">
+        <div class="d-flex flex-wrap row-gap-3 justify-content-md-between align-items-center pb-4 border-bottom border-gray">
+            <div class="d-flex flex-column justify-content-center align-items-center mx-auto me-md-auto ms-md-0">
+                <a href="index.html" class="mb-2"><img src="./assets/images/svg/site-logo-f.svg" alt="Logo"></a>
+                <p class="text-white fs-8 fw-normal mb-4">Zamonaviy va ishochli uylar binokori</p>
+                <form action=""
+                      class="footer-form p-3 border-1 border bg-transparent rounded-3 d-flex align-items-center column-gap-3 border-gray d-none"
+                      method="POST">
+                    <input type="text" placeholder="Email..."
+                           class="w-100 text-white outline-none border-none bg-transparent" required>
+                    <button type="submit" class="btn-primary outline-none border-none rounded-3 p-2"><img
+                            src="./assets/images/svg/send.svg" alt="Icon"></button>
+                </form>
+            </div>
+            <div class="d-flex flex-wrap row-gap-3 column-gap-5 mx-auto ms-md-auto me-md-0 justify-content-center justify-content-md-end">
+                <ul class="d-flex flex-column row-gap-2 align-items-center align-items-md-start">
+                    <h5 class="fs-6 text-white fw-normal mb-3">Bosh sahifa</h5>
+                    <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">Biz haqimizda</a></li>
+                    <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">FAQ</a></li>
+                    <li><a href="#projects-section" class="fs-7 text-white opacity-7 fw-normal">Loyihalar</a></li>
+                </ul>
+                <ul class="d-flex flex-column row-gap-2 align-items-center align-items-md-start">
+                    <h5 class="fs-6 text-white fw-normal mb-3">Biz bilan bog’laning</h5>
+                    <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">Kontaklar</a></li>
+                    <li><a href="#!" class="fs-7 text-white opacity-7 fw-normal">Aloqa markazi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between pt-4 row-gap-3">
+            <p class="fs-8 text-white opacity-7 fw-normal text-center text-md-start">© 2024 Prizma Development Co MChJ. Barcha huquqlar
+                himoyalangan </p>
+            <ul class="d-flex column-gap-2 d-none">
+                <li><a href="#!" class="text-white opacity-7 fs-8 fw-normal">Terms and Condtions</a></li>
+                <img src="./assets/images/svg/dot.svg" class="" alt="Icon">
+                <li><a href="#!" class="text-white opacity-7 fs-8 fw-normal">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!--================ SCROLL UP | Omonjon ================-->
+<a href="#" class="scroll_up" id="scroll-up">
+    <i class='bx bx-up-arrow-alt'></i>
+</a>
+
+<!--================ JQUERY JS 3.6.3v | Omonjon ================-->
+<script src="assets/script/jquery-3.6.3.js"></script>
+
+<!--================ LOTTIE JS | Omonjon ================-->
+<script src="assets/script/lottie-player.js"></script>
+
+<!--================ BOOTSTRAP JS 5.3.1v | Omonjon ================-->
+<script src="assets/script/bootstrap.bundle.min.js"></script>
+
+<!--================ SWIPER JS 8.1.1v | Omonjon ================-->
+<script src="assets/script/swiper-bundle.min.js"></script>
+
+<!--================ MAIN JS | Omonjon ================-->
+<script src="assets/script/main.js?v=0.0.6"></script>
+</body>
+</html>
