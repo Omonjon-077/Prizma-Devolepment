@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
     <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.6">
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.7">
     <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.4">
 
     <title>Prizma Devolepment</title>
@@ -60,14 +60,51 @@
                                     <li><a class="text-white-50" href="#">Biz bilan bog’laning</a></li>
                                 </ul>
                                 <div class="d-flex align-items-center column-gap-2">
-                                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/facebook.svg"></a>
-                                    <a href="#!" class="primary-hover"><img alt=""
-                                                                            src="assets/images/svg/instagram.svg"></a>
+                                    <a href="#!" class=""><img alt="" src="assets/images/svg/facebook.svg"></a>
+                                    <a href="#!" class=""><img alt=""
+                                                               src="assets/images/svg/instagram.svg"></a>
+                                    <a href="#!" class="d-flex align-items-center justify-content-center"><i
+                                            class="bx bxl-telegram bx-sm text-gray"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--================ REQUEST MODAL | Omonjon ================-->
+<div class="modal fade" id="exampleModalRequest" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+     tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ariza qoldiring</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label fs-16pxMb">Ism</label>
+                        <input type="text" required class="form-control" placeholder="Ismingizni kiriting"
+                               id="exampleInputName" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputSurname" class="form-label fs-16pxMb">Familiya</label>
+                        <input type="text" required class="form-control" placeholder="Familiyangizni kiriting"
+                               id="exampleInputSurname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPhone" class="form-label fs-16pxMb">Telefon raqami</label>
+                        <input type="text" required class="form-control" placeholder="+998 (00) 000 00 00"
+                               id="exampleInputPhone">
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn-primary border-none outline-none py-2 px-3 w-100Mb">Joʻnatish</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -103,9 +140,11 @@
                             bilan bog’laning</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center column-gap-2 d-none d-sm-block">
-                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/facebook.svg"></a>
-                    <a href="#!" class="primary-hover"><img alt="" src="assets/images/svg/instagram.svg"></a>
+                <div class="align-items-center column-gap-2 d-none d-sm-flex">
+                    <a href="#!" class=""><img alt="" src="assets/images/svg/facebook.svg"></a>
+                    <a href="#!" class=""><img alt="" src="assets/images/svg/instagram.svg"></a>
+                    <a href="#!" class="d-flex justify-content-center align-items-center"><i
+                            class="bx bxl-telegram bx-sm text-gray"></i></a>
                 </div>
                 <a href="tel:+998555152222" class="text-primary fs-4 fw-bold"><span
                         class="d-none d-sm-block d-lg-none d-xl-block">+55 515 22 22</span><i
@@ -134,7 +173,8 @@
                     bilan
                     ta'minlangan <br> zamonaviy turar-joy majmuasi
                 </div>
-                <a class="btn-primary py-2 px-3 w-100Mb text-center" href="#!">Ariza qoldirish</a>
+                <a class="btn-primary py-2 px-3 w-100Mb text-center" data-bs-target="#exampleModalRequest"
+                   data-bs-toggle="modal" href="#!">Ariza qoldirish</a>
             </div>
         </div>
     </section>
@@ -185,17 +225,20 @@
             <div class="row row-gap-4">
                 <div class="col-12 col-lg-6">
                     <div class="d-flex flex-column position-relative">
-                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start">"Saxovat" turar-joy majmuasi —
+                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start">"Saxovat" turar-joy
+                            majmuasi —
                             Farg'ona viloyati, Buvayda tumani, Yangiqo’rg’on shaharchasi istiqbolli manzillaridan birida
                             qad ko'tarayotgan yangi turar joy majmuasi. Xonadonlar Prizma Development kompaniyasi
                             tomonidan milliy uslub va zamonbob infratuzilma mujassamligida yaratatilmoqda.
                         </div>
-                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start my-4">Majmua ulkan hududni o'z
+                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start my-4">Majmua ulkan
+                            hududni o'z
                             ichiga olgan bo'lib, u ketma-ketlikda qurib bitkazilayotgan 8 ta blok turar-joy binolaridan
                             tashkil topgan. Mijozlar uchun mazkur binolarning barcha 7 qavatida turar-joy maydonlarini
                             hamda tom qavatini 7-qavatga qo’shilgan holda xarid qilish imkoniyatlari taklif etilmoqda.
                         </div>
-                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start">Shinam xonadonlar keng turdagi
+                        <div class="fs-7 text-gray fw-bold fs-14pxMb text-center text-lg-start">Shinam xonadonlar keng
+                            turdagi
                             oilalarning xohishlariga
                             mos kelishi g’oyasi bilan bunyod etilmoqda. 8 turdan ziyod
                             uy rejalari ham yoshlar, ham ko'p farzandli ota-onalarning talablarini qondirishiga
@@ -232,7 +275,8 @@
     <section id="building-section" class="building-section py-5">
         <div class="container">
             <h4 class="section-title d-none d-xl-block no-select">Afzalliklarimiz</h4>
-            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary fs-24pxMb">Turar joy majmuasining
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary fs-24pxMb">Turar joy
+                majmuasining
                 qulayliklari</h4>
             <div class="d-flex justify-content-center d-block d-sm-none">
                 <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
@@ -438,7 +482,8 @@
         <h4 class="section-title text-center text-uppercase text-white d-none d-xl-block no-select">uy rejalari va
             narxlari</h4>
         <div class="container">
-            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-white fs-24pxMb">uy rejalari va narxlari</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-white fs-24pxMb">uy rejalari va
+                narxlari</h4>
             <div class="d-flex justify-content-center d-block d-sm-none">
                 <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
             </div>
@@ -450,13 +495,15 @@
             <div class="row row-gap-3">
                 <div class="col-12 col-lg-6">
                     <div class="d-flex align-items-center justify-content-center h-100">
-                        <img src="./assets/images/home-price.png" alt="Img" style="max-width: 423px;max-height: 670px;"
+                        <img src="./assets/images/svg/home-plan.svg" alt="Img"
+                             style="max-width: 423px;max-height: 670px;"
                              class="w-100">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="d-flex flex-column align-items-start border border-1 border-white rounded-3 p-md-5 p-3">
-                        <h4 class="fs-2 mb-4 text-white fw-bold fs-24pxMb text-center text-md-start">Xonadon turini tanlang</h4>
+                        <h4 class="fs-2 mb-4 text-white fw-bold fs-24pxMb text-center text-md-start">Xonadon turini
+                            tanlang</h4>
 
                         <h6 class="text-white fw-normal mb-2 fs-6 fs-18pxMb">Xonalar</h6>
                         <form action="" class="mb-4" method="">
@@ -578,7 +625,8 @@
     <section id="calculator-section" class="calculator-section py-5">
         <div class="container">
             <h4 class="section-title text-primary d-none d-xl-block no-select">muddatli to’lov </h4>
-            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary fs-24pxMb">muddatli to’lov hisobi</h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center text-lg-start text-primary fs-24pxMb">muddatli to’lov
+                hisobi</h4>
             <div class="d-flex justify-content-center d-block d-sm-none">
                 <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
             </div>
@@ -649,7 +697,8 @@
                                 </div>
                             </div>
                             <div class="">
-                                <button type="submit" class="btn-primary py-2 px-sm-5 px-3 outline-none border-none w-100Mb">
+                                <button type="submit"
+                                        class="btn-primary py-2 px-sm-5 px-3 outline-none border-none w-100Mb">
                                     Hisoblash
                                 </button>
                             </div>
@@ -702,7 +751,8 @@
                         </div>
                     </div>
                     <div class="">
-                        <button type="submit" class="btn-primary py-2 px-sm-5 px-3 outline-none border-none w-100Mb">Hisoblash
+                        <button type="submit" class="btn-primary py-2 px-sm-5 px-3 outline-none border-none w-100Mb">
+                            Hisoblash
                         </button>
                     </div>
                 </form>

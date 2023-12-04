@@ -90,8 +90,8 @@ button[aria-expanded^="true"] i {
     font-weight: 600;
 }
 
-.self-height-lg-siwper {
-    height: 300px;
+.btn-close:focus {
+    box-shadow: initial;
 }
 
 .bg-none {
