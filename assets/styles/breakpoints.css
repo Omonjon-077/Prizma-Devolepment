@@ -1,3 +1,8 @@
+@media (min-width: 1705px) {
+    .min-1700px {
+        display: block !important;
+    }
+}
 @media (min-width: 1200px) {
     .section-title {
         transform: translateY(60px);
