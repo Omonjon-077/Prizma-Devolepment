@@ -11,6 +11,14 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: 'Adlinnaka';
+    src: url('../fonts/Adlinnaka-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 /* Bootstrap tools | Omonjon */
 * {
     margin: 0;
@@ -20,6 +28,7 @@
 
 :root {
     --body-font: 'Muller';
+    --secondary-font: 'Adlinnaka';
     --primary-shadow: 0px 0px 90px 0px rgba(72, 77, 92, 0.15);
 }
 
@@ -27,6 +36,10 @@ body {
     font-family: var(--body-font);
     font-weight: 400;
     font-size: 1rem;
+}
+
+.secondary-font{
+    font-family: var(--secondary-font);
 }
 
 .body-font {

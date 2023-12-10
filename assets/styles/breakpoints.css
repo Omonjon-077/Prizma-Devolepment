@@ -1,5 +1,11 @@
-@media (min-width: 1705px) {
-    .min-1700px {
+@media (min-width: 1825px) {
+    .min-1825px {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1825px) and (min-width: 1200px) {
+    .max-1825px {
         display: block !important;
     }
 }
@@ -7,7 +13,7 @@
     .section-title {
         transform: translateY(60px);
         text-align: start;
-        font-size: 128px;
+        font-size: 120px;
         font-style: normal;
         font-weight: 700;
         color: var(--bs-primary);
@@ -41,7 +47,15 @@
 
 @media (max-width: 575px) {
     .site-logo {
-        width: 150px;
+        width: 130px;
+    }
+
+    .fs-44pxMb{
+        font-size: 44px !important;
+    }
+
+    .fw-boldMb{
+        font-weight: bold !important;
     }
 
     .fs-14pxMb {
@@ -71,6 +85,7 @@
     .footer-form {
         width: 270px !important;
     }
+
     .w-100Mb{
         width: 100% !important;
     }
