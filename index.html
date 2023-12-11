@@ -25,13 +25,13 @@
 
     <!--================ STYLE CSS | Omonjon ================-->
     <link rel="stylesheet" href="assets/styles/main.css?v=0.0.8">
-    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.6">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.7">
 
     <title>Prizma Development</title>
 </head>
 <body>
 <!--================ LOADER | Omonjon ================-->
-<div class="load" id="load">
+<div class="load d-none" id="load">
     <lottie-player autoplay loop mode="normal" src="assets/jsons/loader.json" class="load-gif">
     </lottie-player>
 </div>
@@ -56,8 +56,9 @@
                                     <li><a class="text-white-50" href="#">Loyiha haqida</a></li>
                                     <li><a class="text-white-50" href="#">Xususiyatlari</a></li>
                                     <li><a class="text-white-50" href="#">Fotosuratlar</a></li>
-                                    <li><a class="text-white-50" href="#">Joylashuvi</a></li>
+                                    <li><a class="text-white-50" href="#">Manzil</a></li>
                                     <li><a class="text-white-50" href="#">Biz bilan bog’laning</a></li>
+                                    <li><a class="text-white-50" href="about.html">Kompaniya haqida</a></li>
                                 </ul>
                                 <div class="d-flex align-items-center column-gap-2">
                                     <a href="#!" class=""><img alt="" src="assets/images/svg/facebook.svg"></a>
@@ -118,7 +119,7 @@
             <div class="d-flex align-items-center justify-content-between">
                 <a class="d-flex align-items-center site-logo" href="#"><img alt="LOGO" class="w-100"
                                                                              src="assets/images/svg/site-logo-d.svg"></a>
-                <ul class="d-lg-flex d-none align-items-center column-gap-4">
+                <ul class="d-lg-flex d-none align-items-center column-gap-3">
                     <li class="nav-item">
                         <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
                            href="#about-project">Loyiha
@@ -134,11 +135,15 @@
                     </li>
                     <li class="nav-item">
                         <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
-                           href="#location-section">Joylashuvi</a>
+                           href="#location-section">Manzil</a>
                     </li>
                     <li class="nav-item">
                         <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page" href="#footer">Biz
                             bilan bog’laning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-gray fs-7 fw-bold" aria-current="page"
+                           href="about.html">Kompaniya haqida</a>
                     </li>
                 </ul>
                 <div class="align-items-center column-gap-2 d-none d-sm-flex">
@@ -181,7 +186,7 @@
     </section>
 
     <!--==================== NUMBERS | Omonjon ====================-->
-    <section class="numbers-section py-5 py-lg-4">
+    <section class="numbers-section py-3 py-sm-5 py-lg-4">
         <div class="container">
             <div class="px-xl-5">
                 <div class="row row-gap-3 justify-content-center">
@@ -211,10 +216,11 @@
     </section>
 
     <!--==================== ABOUT PROJECT | Omonjon ====================-->
-    <section class="about-project py-5" id="about-project">
-        <div class="container">
-            <h4 class="section-title secondary-font d-none d-xl-block no-select">Loyiha haqida</h4>
-            <h4 class="fs-2 fw-bold secondary-font text-uppercase text-center text-lg-start text-primary fs-24pxMb">Loyiha haqida</h4>
+    <section class="about-project py-3 py-sm-5" id="about-project">
+        <div class="container overflow-hidden">
+            <h4 class="section-title secondary-font d-none d-xl-block no-select titleOnly-mb">Loyiha haqida</h4>
+            <h4 class="fs-2 fw-bold secondary-font text-uppercase text-center text-lg-start text-primary fs-24pxMb">
+                Loyiha haqida</h4>
             <div class="d-flex justify-content-center d-block d-sm-none">
                 <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
             </div>
@@ -273,12 +279,11 @@
     </section>
 
     <!--==================== BUILDING | Omonjon ====================-->
-    <section id="building-section" class="building-section py-5">
-        <div class="container">
-            <h4 class="section-title secondary-font d-none d-xl-block no-select">Afzalliklarimiz</h4>
-            <h4 class="fs-2 fw-bold secondary-font text-uppercase text-center text-lg-start text-primary fs-24pxMb">Turar joy
-                majmuasining
-                qulayliklari</h4>
+    <section id="building-section" class="building-section py-3 py-sm-5">
+        <div class="container overflow-hidden">
+            <h4 class="section-title secondary-font d-none d-xl-block no-select titleOnly-mb">Afzalliklar</h4>
+            <h4 class="fs-2 fw-bold secondary-font text-uppercase text-center text-lg-start text-primary fs-24pxMb">
+                Turar-joy majmuasining AFzalliklari</h4>
             <div class="d-flex justify-content-center d-block d-sm-none">
                 <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
             </div>
@@ -416,10 +421,11 @@
     </section>
 
     <!--==================== PHOTOS | Omonjon ====================-->
-    <section id="photos-section" class="photos-section py-5 bg-primary d-none d-sm-block">
+    <section id="photos-section" class="photos-section py-3 py-sm-5 bg-primary d-none d-sm-block">
         <div class="container">
             <h4 class="section-title secondary-font text-white d-none d-xl-block no-select">Fotosuratlar</h4>
-            <h4 class="fs-2 fw-bold secondary-font text-uppercase text-center text-lg-start text-white">Sizning kelajakdagi uyingiz
+            <h4 class="fs-2 fw-bold secondary-font text-uppercase text-center text-lg-start text-white">Sizning
+                kelajakdagi uyingiz
                 suratlarda</h4>
         </div>
         <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
@@ -468,7 +474,7 @@
     </section>
 
     <!--==================== LOCATION | Omonjon ====================-->
-    <section id="location-section" class="location-section py-5 d-none d-sm-block">
+    <section id="location-section" class="location-section py-3 py-sm-5 d-none d-sm-block">
         <div class="container">
             <div class="d-flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6062.095298160005!2d71.1385!3d40.562625!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDMzJzQ1LjUiTiA3McKwMDgnMTguNiJF!5e0!3m2!1sru!2s!4v1702102621676!5m2!1sru!2s"
@@ -479,12 +485,15 @@
     </section>
 
     <!--==================== PRICES | Omonjon ====================-->
-    <section class="prices-section py-5 bg-primary">
-        <h4 class="section-title text-center text-uppercase text-white d-none secondary-font min-1825px no-select">uy rejalari va
+    <section class="prices-section overflow-hidden py-3 py-sm-5 bg-primary overflow-hidden">
+        <h4 class="section-title text-center text-uppercase text-white titleOnly-mb d-none secondary-font min-1825px no-select">uy
+            rejalari va
             narxlari</h4>
-        <h4 class="section-title text-center text-uppercase text-white d-none max-1825px secondary-font no-select">uy rejalari</h4>
+        <h4 class="section-subtitle text-center text-uppercase text-white d-none max-1825px secondary-font no-select">uy
+            rejalari</h4>
         <div class="container">
-            <h4 class="fs-2 fw-bold secondary-font text-uppercase text-center text-lg-start text-white fs-24pxMb">uy rejalari va
+            <h4 class="fs-2 fw-bold secondary-font text-uppercase text-center text-lg-start text-white fs-24pxMb">uy
+                rejalari va
                 narxlari</h4>
             <div class="d-flex justify-content-center d-block d-sm-none">
                 <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
@@ -624,10 +633,11 @@
     </section>
 
     <!--==================== CALCULATOR  | Omonjon ====================-->
-    <section id="calculator-section" class="calculator-section py-5">
-        <div class="container">
-            <h4 class="section-title text-primary d-none secondary-font d-xl-block no-select">muddatli to’lov </h4>
-            <h4 class="fs-2 fw-bold text-uppercase text-center secondary-font text-lg-start text-primary fs-24pxMb">muddatli to’lov
+    <section id="calculator-section" class="calculator-section py-3 py-sm-5">
+        <div class="container overflow-hidden">
+            <h4 class="section-title text-primary d-none secondary-font d-xl-block no-select titleOnly-mb">muddatli to’lov </h4>
+            <h4 class="fs-2 fw-bold text-uppercase text-center secondary-font text-lg-start text-primary fs-24pxMb">
+                muddatli to’lov
                 hisobi</h4>
             <div class="d-flex justify-content-center d-block d-sm-none">
                 <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
@@ -650,10 +660,8 @@
                         </div>
                         <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb">30% - Boshlang'ich
                             to'lov</h4>
-                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb my-1">40% - 24 Oylik
-                            to'lovga</h4>
-                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb">30% - Kadastr bilan
-                            ipotekaga</h4>
+                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb my-1">40% - 24 oylik muddatli to'lov</h4>
+                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb">30% - Ipoteka</h4>
                     </div>
                 </div>
                 <div class="col-12 col-xl-8">
@@ -671,8 +679,8 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword6"
-                                           class="form-label text-black fs-6 fw-normal fs-16pxMb">Boshlang’ich
-                                        to’lov</label>
+                                           class="form-label text-black fs-6 fw-normal fs-16pxMb">Oylik
+                                        to'lov</label>
                                     <input required autocomplete="off" type="number" placeholder="1"
                                            class="form-control mb-3"
                                            id="exampleInputPassword6">
@@ -681,8 +689,8 @@
                             <div class="col-12 col-sm-6">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail7"
-                                           class="form-label text-black fs-6 fw-normal fs-16pxMb">Oylik
-                                        to'lov</label>
+                                           class="form-label text-black fs-6 fw-normal fs-16pxMb">Boshlang’ich
+                                        to’lov</label>
                                     <input required autocomplete="off" type="number" placeholder="1"
                                            class="form-control mb-3"
                                            id="exampleInputEmail7" aria-describedby="emailHelp">
@@ -712,15 +720,14 @@
     </section>
 
     <!--==================== MORTGAGE | Omonjon ====================-->
-    <section class="mortgage-section py-5">
+    <section class="mortgage-section py-3 py-sm-5">
         <div class="container py-0 py-lg-4">
             <div class="d-flex flex-column bg-white primary-shadow rounded-3 p-3 p-sm-5">
                 <h4 class="fs-2 text-black fw-normal mb-4">Ipoteka rasmiylashtirish</h4>
                 <form action="" class="row row-gap-3" method="POST">
                     <div class="col-12 col-sm-6">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label text-black fs-6 fw-normal">Uyning
-                                bahosi</label>
+                            <label for="exampleInputEmail1" class="form-label text-black fs-6 fw-normal">Uyning umumiy narxi</label>
                             <input required autocomplete="off" type="number" placeholder="Min: 150 mln so’m"
                                    class="form-control mb-3"
                                    id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -758,6 +765,98 @@
                         </button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FEEDBACK | Omonjon ====================-->
+    <section id="feedback-section" class="feedback-section py-3 py-sm-5">
+        <div class="container overflow-hidden">
+            <h4 class="section-title d-none d-xl-block secondary-font no-select titleOnly-mb">Biz bilan Aloqa</h4>
+            <h4 class="fs-2 fw-bold text-uppercase secondary-font text-center text-lg-start text-primary fs-20pxMb">Biz
+                bilan
+                bog’laning</h4>
+            <div class="d-flex justify-content-center mt-2 d-block d-sm-none">
+                <img src="assets/images/svg/yellow-line-mb.svg" class="d-block d-sm-none" alt="">
+            </div>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container mt-xl-5 mt-md-4 mt-3">
+            <div class="row row-gap-4">
+                <div class="col-12 col-xl-5">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <div class="d-flex flex-column flex-sm-row column-gap-3 mb-3 align-items-center row-gap-3">
+                            <img src="./assets/images/svg/feedback-icon-1.svg" style="width: 60px;height: 60px;" alt=""
+                                 class="">
+                            <div class="d-flex flex-column justify-content-center">
+                                <h5 class="text-center text-sm-start fs-7 text-black fw-bld mb-1">Bizning Manzil</h5>
+                                <div class="text-center text-sm-start fs-8 text-gray fw-normal">
+                                    Farg'ona viloyati, Uchko'prik tumani, Uchko'prik QFY Turkiston ko'chasi, 47-uy
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row column-gap-3 mb-3 align-items-center row-gap-3">
+                            <img src="./assets/images/svg/feedback-icon-2.svg" style="width: 60px;height: 60px;" alt=""
+                                 class="">
+                            <div class="d-flex flex-column justify-content-center">
+                                <h5 class="fs-7 text-center text-sm-start text-black fw-bld mb-1">Telefon raqamimiz</h5>
+                                <div class="fs-8 text-center text-sm-start text-gray fw-normal">
+                                    +998 55 515 22 22
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row column-gap-3 mb-3 align-items-center row-gap-3">
+                            <img src="./assets/images/svg/feedback-icon-3.svg" style="width: 60px;height: 60px;" alt=""
+                                 class="">
+                            <div class="d-flex flex-column justify-content-center">
+                                <h5 class="fs-7 text-center text-sm-start text-black fw-bld mb-1">Email</h5>
+                                <div class="fs-8 text-center text-sm-start text-gray fw-normal">
+                                    info@prizmadevelopment.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex w-100 justify-content-center justify-content-lg-start">
+                            <h4 class="fs-4 text-black fw-bold mb-3 fs-20pxMb">Ijtimoiy tarmoqlarimiz</h4>
+                        </div>
+                        <div class="d-flex column-gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#!" class=""><img src="./assets/images/svg/socialN-1.svg" alt="" class=""></a>
+                            <a href="#!" class=""><img src="./assets/images/svg/socialN-2.svg" alt="" class=""></a>
+                            <a href="#!" class=""><img src="./assets/images/svg/socialN-3.svg" alt="" class=""></a>
+                            <a href="#!" class=""><img src="./assets/images/svg/socialN-4.svg" alt="" class=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-7">
+                    <div class="d-flex flex-column bg-white primary-shadow rounded-3 p-3 p-sm-5">
+                        <h5 class="fs-2 text-gray fw-normal mb-3 text-center text-lg-start fs-24pxMb">Ariza
+                            qoldiring</h5>
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="exampleInputName2" class="form-label fs-16pxMb">Ism</label>
+                                <input type="text" required class="form-control" placeholder="Ismingizni kiriting"
+                                       id="exampleInputName2" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputSurname2" class="form-label fs-16pxMb">Familiya</label>
+                                <input type="text" required class="form-control" placeholder="Familiyangizni kiriting"
+                                       id="exampleInputSurname2">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPhone2" class="form-label fs-16pxMb">Telefon raqami</label>
+                                <input type="text" required class="form-control" placeholder="+998 (00) 000 00 00"
+                                       id="exampleInputPhone2">
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn-primary border-none outline-none py-2 px-3 w-100Mb">
+                                    Qayta
+                                    qo’ng’iroq qiling
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

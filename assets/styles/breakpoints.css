@@ -8,7 +8,21 @@
     .max-1825px {
         display: block !important;
     }
+
+    .section-subtitle {
+        font-size: 110px;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--bs-primary);
+        opacity: .1;
+        line-height: normal;
+        text-transform: uppercase;
+        position: relative;
+        bottom: -60px;
+        left: -220px;
+    }
 }
+
 @media (min-width: 1200px) {
     .section-title {
         transform: translateY(60px);
@@ -50,11 +64,11 @@
         width: 130px;
     }
 
-    .fs-44pxMb{
+    .fs-44pxMb {
         font-size: 44px !important;
     }
 
-    .fw-boldMb{
+    .fw-boldMb {
         font-weight: bold !important;
     }
 
@@ -86,7 +100,30 @@
         width: 270px !important;
     }
 
-    .w-100Mb{
+    .w-100Mb {
         width: 100% !important;
+    }
+
+    .titleOnly-mb {
+        display: block !important;
+        opacity: .1;
+        text-align: center;
+        text-transform: uppercase;
+        width: max-content;
+        overflow: hidden;
+        transform: translateY(45px);
+        font-size: 50px !important;
+    }
+
+    .prizma-section .titleOnly-mb {
+        display: block !important;
+        padding: 0 !important;
+        opacity: .1;
+        text-align: center;
+        text-transform: uppercase;
+        width: max-content;
+        overflow: hidden;
+        transform: translateY(45px);
+        font-size: 77px !important;
     }
 }
