@@ -111,7 +111,7 @@
         text-transform: uppercase;
         width: max-content;
         overflow: hidden;
-        transform: translateY(45px);
+        transform: translateY(20px);
         font-size: 50px !important;
     }
 
