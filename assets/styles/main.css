@@ -386,6 +386,10 @@ a {
     margin-left: auto;
 }
 
+#exampleModalRequest .form-control::placeholder {
+    opacity: .3;
+}
+
 /*=============== MORTGAGE | Omonjon ===============*/
 .mortgage-section .form-control::placeholder {
     color: var(--bs-gray);
