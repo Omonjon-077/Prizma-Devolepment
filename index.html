@@ -36,41 +36,28 @@
     </lottie-player>
 </div>
 
-<!--================ MENUS MODAL | Omonjon ================-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="container-sm container-fluid d-flex">
-                    <button type="button" class="btn-close box-shadow-none px-0" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                </div>
-            </div>
-            <div class="modal-body bg-dark pt-md-5 pt-sm-3 pt-3">
-                <div class="container-sm container-fluid">
-                    <div class="row row-gap-3">
-                        <div class="col-12">
-                            <div class="d-flex flex-column align-items-center row-gap-2">
-                                <h3 class="fs-5 text-white">Prizma Development</h3>
-                                <ul class="d-flex flex-column align-items-center row-gap-2">
-                                    <li><a class="text-white-50" href="#">Loyiha haqida</a></li>
-                                    <li><a class="text-white-50" href="#">Xususiyatlari</a></li>
-                                    <li><a class="text-white-50" href="#">Fotosuratlar</a></li>
-                                    <li><a class="text-white-50" href="#">Manzil</a></li>
-                                    <li><a class="text-white-50" href="#">Biz bilan bog’laning</a></li>
-                                    <li><a class="text-white-50" href="about.html">Kompaniya haqida</a></li>
-                                </ul>
-                                <div class="d-flex align-items-center column-gap-2">
-                                    <a href="#!" class=""><img alt="" src="assets/images/svg/facebook.svg"></a>
-                                    <a href="#!" class=""><img alt=""
-                                                               src="assets/images/svg/instagram.svg"></a>
-                                    <a href="#!" class="d-flex align-items-center justify-content-center"><i
-                                            class="bx bxl-telegram bx-sm text-gray"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--================ MENUS CANVAS | Omonjon ================-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header p-4">
+        <h5 class="offcanvas-title secondary-font fs-4 fw-bold text-gray" id="offcanvasRightLabel">Menyu</h5>
+        <button type="button" class="btn-close opacity-100" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+        <ul class="d-flex flex-column align-items-start row-gap-4">
+            <li><a class="text-gray fs-5 fw-normal" href="#about-project">Loyiha haqida</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="#building-section">Xususiyatlari</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="#photos-section">Fotosuratlar</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="#location-section">Manzil</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="#footer">Biz bilan bog’laning</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="about.html">Kompaniya haqida</a></li>
+        </ul>
+        <div class="d-flex flex-column align-items-start row-gap-4 mt-5 pt-5">
+            <a href="tel:+998555152222" class="text-primary fs-4 fw-bold">+998 55 515 22 22</a>
+            <div class="d-flex align-items-center column-gap-3 justify-content-start">
+                <a href="#!" class=""><img alt="" src="assets/images/svg/facebook.svg"></a>
+                <a href="#!" class=""><img alt="" src="assets/images/svg/instagram.svg"></a>
+                <a href="#!" class="d-flex justify-content-center align-items-center"><i
+                        class="bx bxl-telegram bx-sm text-gray"></i></a>
             </div>
         </div>
     </div>
@@ -81,11 +68,12 @@
      tabindex="-1">
     <div class="modal-dialog modal-md modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ariza qoldiring</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header border-0 pb-0 p-4">
+                <h1 class="modal-title fs-3 fw-normal" id="exampleModalToggleLabel">Ariza qoldiring</h1>
+                <button type="button" class="btn-close text-black opacity-100" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body p-4">
                 <form action="" method="post">
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label fs-16pxMb">Ism</label>
@@ -102,8 +90,8 @@
                         <input type="text" required class="form-control" placeholder="+998 (00) 000 00 00"
                                id="exampleInputPhone">
                     </div>
-                    <div class="">
-                        <button type="submit" class="btn-primary border-none outline-none py-2 px-3 w-100Mb">Joʻnatish
+                    <div class="d-flex">
+                        <button type="submit" class="btn-primary border-none outline-none py-2 px-3 w-100">Joʻnatish
                         </button>
                     </div>
                 </form>
@@ -158,8 +146,8 @@
                 <a href="tel:+998555152222" class="text-primary fs-8 fw-bold d-block d-sm-none">+998 55 515 22 22</a>
                 <button type="button"
                         class="outline-none border-none bg-transparent d-lg-none d-flex align-items-center justify-content-center"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="fs-3 text-primary bx bx-menu"></i>
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img src="assets/images/svg/menuBtn.svg" alt="">
                 </button>
             </div>
         </div>
@@ -487,7 +475,8 @@
     <!--==================== PRICES | Omonjon ====================-->
     <section class="prices-section overflow-hidden py-3 py-sm-5 py-xxl-2 bg-primary">
         <div class="container overflow-hidden">
-            <h4 class="section-title secondary-font text-white d-none d-xl-block no-select titleOnly-mb">uy rejalari</h4>
+            <h4 class="section-title secondary-font text-white d-none d-xl-block no-select titleOnly-mb">uy
+                rejalari</h4>
             <h4 class="fs-2 fw-bold secondary-font text-white text-uppercase text-center text-lg-start text-primary fs-24pxMb">
                 uy rejalari va narxlari</h4>
             <div class="d-flex justify-content-center d-block d-sm-none">
@@ -630,7 +619,8 @@
     <!--==================== CALCULATOR  | Omonjon ====================-->
     <section id="calculator-section" class="calculator-section py-3 py-sm-5">
         <div class="container overflow-hidden">
-            <h4 class="section-title text-primary d-none secondary-font d-xl-block no-select titleOnly-mb">muddatli to’lov </h4>
+            <h4 class="section-title text-primary d-none secondary-font d-xl-block no-select titleOnly-mb">muddatli
+                to’lov </h4>
             <h4 class="fs-2 fw-bold text-uppercase text-center secondary-font text-lg-start text-primary fs-24pxMb">
                 muddatli to’lov
                 hisobi</h4>
@@ -655,7 +645,8 @@
                         </div>
                         <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb">30% - Boshlang'ich
                             to'lov</h4>
-                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb my-1">40% - 24 oylik muddatli to'lov</h4>
+                        <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb my-1">40% - 24 oylik
+                            muddatli to'lov</h4>
                         <h4 class="text-primary fw-bolder text-center text-md-start fs-4 fs-20pxMb">30% - Ipoteka</h4>
                     </div>
                 </div>
@@ -714,6 +705,149 @@
         </div>
     </section>
 
+    <!--==================== FAQ | Omonjon ====================-->
+    <section id="faq-section" class="py-5 bg-primary">
+        <div class="container overflow-hidden">
+            <h4 class="section-title secondary-font text-white d-none d-xl-block no-select titleOnly-mb">savollar</h4>
+            <h4 class="fs-2 fw-bold secondary-font text-white text-uppercase text-center text-lg-start text-primary fs-24pxMb">
+                Ko’p so’raladigan savollar</h4>
+            <div class="d-flex justify-content-center d-sm-none">
+                <img src="./assets/images/svg/yellow-line-mb.svg" alt="" class="mt-2">
+            </div>
+        </div>
+        <div class="d-lg-flex d-none mt-3 align-items-center justify-content-start">
+            <img class="" alt="" src="assets/images/yellow-line.jpg">
+        </div>
+        <div class="container">
+            <div class="mt-4 mt-sm-5">
+                <div class="accordion accordion-flush d-flex flex-column row-gap-3" id="accordionFlushExample">
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0 border-gray"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                Lorem ipsum dolor sit amet consectetur. Risus in lectus?<img
+                                    src="./assets/images/svg/arrow-bottom.svg"
+                                    class="me-3 order-first transition bg-transparent" alt="">
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse bg-transparent collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white fw-normal fs-7 px-0">
+                                Loyiha qurilishi jarayonida 30% boshlang’ich to’lovni amalga oshirib, 40% qismini 24
+                                oyda muddatli to’lov shartlarida hamda qoldiq 30% ipoteka asosida amalga oshiriladi.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0 border-gray"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                How can I contact you? <img src="./assets/images/svg/arrow-bottom.svg"
+                                                            class="me-3 order-first transition bg-transparent" alt="">
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse bg-transparent collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white fw-normal fs-7 px-0">Nunc duis id aenean gravida
+                                tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet
+                                pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
+                                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque
+                                pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
+                                egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0 border-gray"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                How long does it take to arrive? <img src="./assets/images/svg/arrow-bottom.svg"
+                                                                      class="me-3 order-first transition bg-transparent"
+                                                                      alt="">
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse bg-transparent collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white fw-normal fs-7 px-0">Nunc duis id aenean gravida
+                                tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet
+                                pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
+                                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque
+                                pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
+                                egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0 border-gray"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                    aria-expanded="false" aria-controls="flush-collapseFour">
+                                What does include a service Emergency Commissar? <img
+                                    src="./assets/images/svg/arrow-bottom.svg"
+                                    class="me-3 order-first transition bg-transparent" alt="">
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse bg-transparent collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white fw-normal fs-7 px-0">Nunc duis id aenean gravida
+                                tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet
+                                pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
+                                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque
+                                pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
+                                egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0 border-gray"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                    aria-expanded="false" aria-controls="flush-collapseFive">
+                                What is your working hours? <img src="./assets/images/svg/arrow-bottom.svg"
+                                                                 class="me-3 order-first transition bg-transparent"
+                                                                 alt="">
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse bg-transparent collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white fw-normal fs-7 px-0">Nunc duis id aenean gravida
+                                tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet
+                                pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
+                                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque
+                                pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
+                                egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0 border-gray"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                    aria-expanded="false" aria-controls="flush-collapseSix">
+                                What happens if I call police first? <img src="./assets/images/svg/arrow-bottom.svg"
+                                                                          class="me-3 order-first transition bg-transparent"
+                                                                          alt="">
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse bg-transparent collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white fw-normal fs-7 px-0">Nunc duis id aenean gravida
+                                tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet
+                                pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
+                                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque
+                                pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
+                                egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--==================== MORTGAGE | Omonjon ====================-->
     <section class="mortgage-section py-3 py-sm-5">
         <div class="container py-0 py-lg-4">
@@ -722,7 +856,8 @@
                 <form action="" class="row row-gap-3" method="POST">
                     <div class="col-12 col-sm-6">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label text-black fs-6 fw-normal">Uyning umumiy narxi</label>
+                            <label for="exampleInputEmail1" class="form-label text-black fs-6 fw-normal">Uyning umumiy
+                                narxi</label>
                             <input required autocomplete="off" type="number" placeholder="Min: 150 mln so’m"
                                    class="form-control mb-3"
                                    id="exampleInputEmail1" aria-describedby="emailHelp">

@@ -86,13 +86,20 @@ body {
 
 .accordion-button::after {
     display: none;
+    display: none;
+}
+
+button[aria-expanded^="true"] img {
+    transform: rotate(-180deg) !important;
+    background: transparent !important;
+    box-shadow: 0px 0px 90px 0px var(--bs-secondary);
 }
 
 button[aria-expanded^="true"] i {
-    background-color: var(--bs-primary) !important;
     transform: rotate(-180deg) !important;
-    color: black !important;
-    box-shadow: 0px 8px 18px -8px rgba(116, 246, 0, 0.90);
+    background: transparent !important;
+    box-shadow: 0px 0px 90px 0px var(--bs-secondary);
+    color: var(--bs-secondary);
 }
 
 .btn-primary {
