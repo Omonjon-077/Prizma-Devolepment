@@ -72,12 +72,14 @@ if ($(".projectsSwiper").length) {
 }
 
 /*=============== INPUT RANGE ===============*/
-const progressBars = document.querySelectorAll('.progress');
-for (let i = 0; i < progressBars.length; i++) {
-    progressBars[i].addEventListener('input', function () {
-        const value = this.value;
-        this.style.background = `linear-gradient(to right, var(--bs-secondary) 0%, var(--bs-secondary) ${value}%, #F8F8F8 ${value}%, #F8F8F8 100%)`
-    })
+if ($(".progress").length) {
+    const progressBars = document.querySelectorAll('.progress');
+    for (let i = 0; i < progressBars.length; i++) {
+        progressBars[i].addEventListener('input', function () {
+            const value = this.value;
+            this.style.background = `linear-gradient(to right, var(--bs-secondary) 0%, var(--bs-secondary) ${value}%, #F8F8F8 ${value}%, #F8F8F8 100%)`
+        })
+    }
 }
 
 /*=============== SHOW SCROLL UP ===============*/

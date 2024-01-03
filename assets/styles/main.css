@@ -198,6 +198,12 @@ input[type=number] {
     z-index: 3;
 }
 
+.btn:hover,
+.btn:focus{
+    background-color: transparent;
+    border-color: transparent;
+}
+
 .z-index-4 {
     z-index: 4;
 }
@@ -344,6 +350,11 @@ a {
 /*=============== INTRO SECTION | Omonjon ===============*/
 .intro-section .container {
     background-image: url("../images/bg-banner.jpg");
+    height: 593px;
+}
+
+.sergeli-intro .container {
+    background-image: url("../images/intro-bg.jpg");
     height: 593px;
 }
 
