@@ -33,10 +33,10 @@ if ($(".photoSwiper").length) {
         spaceBetween: 30,
         loop: false,
         grabCursor: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: true,
-        },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: true,
+        // },
         pagination: {
             el: ".swiper-pagination",
             type: "fraction",
