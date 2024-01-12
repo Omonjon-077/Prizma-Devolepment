@@ -408,10 +408,6 @@ a {
     opacity: .3;
 }
 
-.photos-section-spacer {
-    margin-top: 147px;
-}
-
 /*=============== MORTGAGE | Omonjon ===============*/
 .mortgage-section .form-control::placeholder {
     color: var(--bs-gray);

@@ -1,3 +1,49 @@
+@media (min-width: 575px) {
+    .border-lg-end {
+        border-right: 1px solid var(--bs-gray);
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-title {
+        transform: translateY(60px);
+        text-align: start;
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--bs-primary);
+        opacity: .1;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .photos-section-logo {
+        width: max-content !important;
+    }
+
+    .intro-rImg {
+        max-width: 482px !important;
+        max-height: 339px !important;
+    }
+
+    .intro-rImg2 {
+        max-width: 277px !important;
+        max-height: 277px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .photos-section-mt {
+        margin-top: 120px !important;
+    }
+}
+
+@media (min-width: 1500px) {
+    .photos-section-spacer {
+        margin-top: 147px;
+    }
+}
+
 @media (min-width: 1825px) {
     .min-1825px {
         display: block !important;
@@ -20,36 +66,6 @@
         position: relative;
         bottom: -60px;
         left: -220px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .section-title {
-        transform: translateY(60px);
-        text-align: start;
-        font-size: 120px;
-        font-style: normal;
-        font-weight: 700;
-        color: var(--bs-primary);
-        opacity: .1;
-        line-height: normal;
-        text-transform: uppercase;
-    }
-
-    .intro-rImg {
-        max-width: 482px !important;
-        max-height: 339px !important;
-    }
-
-    .intro-rImg2 {
-        max-width: 277px !important;
-        max-height: 277px !important;
-    }
-}
-
-@media (min-width: 575px) {
-    .border-lg-end {
-        border-right: 1px solid var(--bs-gray);
     }
 }
 
@@ -125,5 +141,18 @@
         overflow: hidden;
         transform: translateY(45px);
         font-size: 77px !important;
+    }
+    .photos-section-logo {
+        width:80px !important;
+    }
+    .photos-section-btn {
+        font-size: 11px !important;
+        padding: 3px 7px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .photos-section-spacer {
+        padding-top: 25px !important;
     }
 }
