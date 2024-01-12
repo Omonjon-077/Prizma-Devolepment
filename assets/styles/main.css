@@ -477,7 +477,7 @@ a {
     padding: 0 10px !important;
 }
 
-.projectsSwiper .swiper-pagination-current {
+.projects-section .swiper-pagination-current {
     color: var(--bs-secondary);
 }
 
@@ -507,7 +507,7 @@ a {
     width: 70%;
 }
 
-.projectsSwiper .container-70 {
+.projects-section .container-70 {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 70%;
