@@ -48,6 +48,17 @@ if ($(".photoSwiper").length) {
     });
 }
 
+/*=============== PRICES | SWIPER ===============*/
+if ($(".pricesSwiper").length) {
+    let swiper = new Swiper(".pricesSwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: false,
+        grabCursor: true,
+    });
+}
+
 /*=============== PROJECTS | SWIPER ===============*/
 if ($(".projectsSwiper").length) {
     let swiper = new Swiper(".projectsSwiper", {
