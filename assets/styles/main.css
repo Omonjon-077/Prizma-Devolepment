@@ -349,12 +349,12 @@ a {
 
 /*=============== INTRO SECTION | Omonjon ===============*/
 .intro-section .container {
-    background-image: url("../images/bg-banner.jpg");
+    background: url("../images/bg-banner.jpg") no-repeat center/cover;
     height: 593px;
 }
 
 .sergeli-intro .container {
-    background-image: url("../images/intro-bg.jpg");
+    background: url("../images/intro-bg.jpg") no-repeat center/cover;
     height: 593px;
 }
 
@@ -406,6 +406,10 @@ a {
 
 #exampleModalRequest .form-control::placeholder {
     opacity: .3;
+}
+
+.photos-slide-h {
+    max-height: 732px !important;
 }
 
 /*=============== MORTGAGE | Omonjon ===============*/
