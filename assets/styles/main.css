@@ -336,6 +336,10 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+#exampleModalRequest .form-control::placeholder {
+    opacity: .3;
+}
+
 /* ==================== ABOUT PROJECT | Omonjon ==================== */
 .position-left {
     bottom: -85px;
@@ -404,12 +408,19 @@ a {
     margin-left: auto;
 }
 
-#exampleModalRequest .form-control::placeholder {
-    opacity: .3;
-}
 
 .photos-slide-h {
     max-height: 732px !important;
+}
+
+/*=============== PRICES SWIPER | Omonjon ===============*/
+.pricesSwiper .swiper-button-prev::after,
+.pricesSwiper .swiper-button-next::after {
+    content: '';
+}
+
+.pricesSwiper .swiper-button-disabled {
+    visibility: hidden;
 }
 
 /*=============== MORTGAGE | Omonjon ===============*/

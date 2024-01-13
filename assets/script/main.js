@@ -56,6 +56,10 @@ if ($(".pricesSwiper").length) {
         spaceBetween: 30,
         loop: false,
         grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 }
 
