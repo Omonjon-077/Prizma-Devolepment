@@ -416,11 +416,6 @@ a {
     margin-left: auto;
 }
 
-
-.photos-slide-h {
-    max-height: 732px !important;
-}
-
 /*=============== PRICES SWIPER | Omonjon ===============*/
 .pricesSwiper .swiper-button-prev::after,
 .pricesSwiper .swiper-button-next::after {
