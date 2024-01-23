@@ -70,6 +70,15 @@
     .photos-slide-h {
         height: 732px !important;
     }
+
+    .photoSwiper .swiper-slide {
+        width: 1440px;
+    }
+
+    .photoSwiper .container-70 {
+        max-width: 1440px !important;
+        width: 100%;
+    }
 }
 
 @media (max-width: 1825px) and (min-width: 1200px) {
